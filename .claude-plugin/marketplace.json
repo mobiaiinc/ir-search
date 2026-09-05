@@ -1,0 +1,15 @@
+{
+  "name": "ir-search",
+  "description": "한국 정부·공공기관 지원사업 전수조사 스킬 (K-Startup·기업마당·NIPA·KOCCA·SMTECH)",
+  "owner": { "name": "mobiaiinc" },
+  "plugins": [
+    {
+      "name": "ir-search",
+      "description": "Crawl every open Korean support-program announcement, verify eligibility from the original text, and report a 3-tier classification with durable survey state.",
+      "version": "3.0.0",
+      "source": "./",
+      "author": { "name": "mobiaiinc" },
+      "homepage": "https://github.com/mobiaiinc/ir-search"
+    }
+  ]
+}

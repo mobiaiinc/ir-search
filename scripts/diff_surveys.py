@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Compare two survey runs and report what changed.
 
-Reads every *.jsonl in a previous and a current survey directory (the raw
-crawl output that the skill saves alongside each report) and classifies:
+Reads the raw crawl *.jsonl files in a previous and a current survey directory
+(derived files — new_items.jsonl, verified.jsonl — are skipped, and so is any
+record that lacks the crawler fields) and classifies:
 
   new              — announcements that appeared since the previous run
   closed           — announcements that disappeared (deadline passed / pulled)
@@ -28,12 +29,18 @@ import sys
 from pathlib import Path
 
 
+# Files the skill writes into a run directory that are *derived* from the raw
+# crawl (same ids, different fields). Reading them would create false
+# "deadline changed" entries (verified.jsonl has no apply_end).
+SKIP_FILES = {"new_items.jsonl", "verified.jsonl"}
+
+
 def load_dir(d: Path):
-    """Load every *.jsonl in *d* into {(source, id): record}."""
+    """Load the raw crawl *.jsonl files in *d* into {(source, id): record}."""
     records = {}
-    files = sorted(d.glob("*.jsonl"))
+    files = sorted(f for f in d.glob("*.jsonl") if f.name not in SKIP_FILES)
     if not files:
-        sys.exit(f"ERROR: no .jsonl files in {d}")
+        sys.exit(f"ERROR: no raw crawl .jsonl files in {d}")
     for f in files:
         for line in f.read_text(encoding="utf-8").splitlines():
             line = line.strip()
@@ -49,10 +56,10 @@ def load_dir(d: Path):
                 key = ("kstartup", str(rec["pbancSn"]))
                 rec.setdefault("source", "kstartup")
                 rec.setdefault("apply_end", rec.get("deadline", ""))
-            elif "source" in rec and "id" in rec:
+            elif "source" in rec and "id" in rec and "apply_end" in rec:
                 key = (rec["source"], str(rec["id"]))
             else:
-                continue  # unrecognized record shape
+                continue  # unrecognized / derived record shape
             records[key] = rec
     return records
 
