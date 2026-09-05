@@ -94,7 +94,8 @@ git clone https://github.com/mobiaiinc/ir-search.git && cd ir-search && ./instal
 ```
 
 ```bash
-pip install 'curl_cffi>=0.15'   # recommended (avoids TLS-fingerprint blocking); falls back to urllib
+# recommended (avoids TLS-fingerprint blocking); falls back to urllib without it
+python3 -m pip install --user 'curl_cffi>=0.15'
 ```
 
 ## Use
@@ -118,13 +119,16 @@ Later:
 The crawlers and the state tool also work standalone:
 
 ```bash
-python3 scripts/kstartup_crawl.py list -o all.jsonl --drop-expired         # all open K-Startup announcements
-python3 scripts/kstartup_crawl.py detail 178481 -o details/                # detail-page text
-python3 scripts/sources_crawl.py list bizinfo -o biz.jsonl --max-pages 20  # Bizinfo
-python3 scripts/sources_crawl.py list all -o sources.jsonl                 # all four extra sources
+# all open K-Startup announcements / detail-page text / Bizinfo / all four extra sources
+python3 scripts/kstartup_crawl.py list -o all.jsonl --drop-expired
+python3 scripts/kstartup_crawl.py detail 178481 -o details/
+python3 scripts/sources_crawl.py list bizinfo -o biz.jsonl --max-pages 20
+python3 scripts/sources_crawl.py list all -o sources.jsonl
 python3 scripts/diff_surveys.py <previous run dir> <current run dir> --out new.jsonl
-python3 scripts/survey_state.py status                                     # profile · runs · queue
-python3 scripts/survey_state.py queue list                                 # work items + D-day
+# profile · runs · queue
+python3 scripts/survey_state.py status
+# work items + D-day
+python3 scripts/survey_state.py queue list
 ```
 
 ## Layout
@@ -157,7 +161,7 @@ Note: `SKILL.md`, the references, the agents, and the workspace files are writte
 ## Development
 
 ```bash
-python3 -m unittest discover -s tests -v   # runs without network access
+python3 -m unittest discover -s tests -v
 ```
 
 After changing a parser, run a live smoke test (`list --max-pages 2`) from a machine with network access and update the verification date in `references/sources.md`. Rules and traps are in `docs/`.

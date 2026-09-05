@@ -96,7 +96,8 @@ git clone https://github.com/mobiaiinc/ir-search.git && cd ir-search && ./instal
 ```
 
 ```bash
-pip install 'curl_cffi>=0.15'   # 권장 (TLS 지문 차단 회피). 없으면 urllib로 폴백
+# 권장 (TLS 지문 차단 회피). 없으면 urllib로 폴백. pip가 없으면 python3 -m pip
+python3 -m pip install --user 'curl_cffi>=0.15'
 ```
 
 ## 사용
@@ -119,13 +120,15 @@ Claude Code에서 프로젝트 폴더를 연 상태로:
 크롤러와 상태 도구는 단독으로도 쓸 수 있습니다:
 
 ```bash
-python3 scripts/kstartup_crawl.py list -o all.jsonl --drop-expired         # K-Startup 모집중 전수
-python3 scripts/kstartup_crawl.py detail 178481 -o details/                # 상세공고 원문
-python3 scripts/sources_crawl.py list bizinfo -o biz.jsonl --max-pages 20  # 기업마당
-python3 scripts/sources_crawl.py list all -o sources.jsonl                 # 4개 소스 일괄
+# K-Startup 모집중 전수 / 상세공고 원문 / 기업마당 / 4개 소스 일괄
+python3 scripts/kstartup_crawl.py list -o all.jsonl --drop-expired
+python3 scripts/kstartup_crawl.py detail 178481 -o details/
+python3 scripts/sources_crawl.py list bizinfo -o biz.jsonl --max-pages 20
+python3 scripts/sources_crawl.py list all -o sources.jsonl
 python3 scripts/diff_surveys.py <직전 실행 폴더> <이번 실행 폴더> --out new.jsonl
-python3 scripts/survey_state.py status                                     # 프로필·실행·큐 요약
-python3 scripts/survey_state.py queue list                                 # 할 일 + D-day
+# 프로필·실행·큐 요약 / 할 일 + D-day
+python3 scripts/survey_state.py status
+python3 scripts/survey_state.py queue list
 ```
 
 ## 구성
@@ -156,7 +159,7 @@ ir-search/
 ## 개발
 
 ```bash
-python3 -m unittest discover -s tests -v   # 네트워크 없이 돕니다
+python3 -m unittest discover -s tests -v
 ```
 
 파서를 고쳤으면 네트워크 있는 환경에서 실사이트 스모크(`list --max-pages 2`)를 돌리고 `references/sources.md`의 실측 날짜를 갱신하세요. 규칙과 함정은 `docs/`에 있습니다.

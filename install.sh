@@ -19,10 +19,13 @@ ACTION="install"
 
 while [ $# -gt 0 ]; do
   case "$1" in
-    --project) TARGET_BASE="$(cd "$2" && pwd)/.claude"; shift 2 ;;
+    --project)
+      [ -n "${2:-}" ] && [ -d "$2" ] || { echo "✗ --project needs an existing directory (got: '${2:-}')" >&2; exit 1; }
+      TARGET_BASE="$(cd "$2" && pwd)/.claude"; shift 2 ;;
     --copy) MODE="copy"; shift ;;
     --uninstall) ACTION="uninstall"; shift ;;
     -h|--help) sed -n '2,13p' "$0"; exit 0 ;;
+    \#*) echo "✗ '$1' looks like a shell comment — zsh passes '#' as an argument; run the command without the trailing comment" >&2; exit 1 ;;
     *) echo "unknown option: $1" >&2; exit 1 ;;
   esac
 done

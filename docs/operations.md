@@ -10,10 +10,12 @@
 
 ```bash
 git clone https://github.com/mobiaiinc/ir-search.git && cd ir-search
-python3 -m py_compile scripts/*.py                 # 1. 컴파일
-python3 -m unittest discover -s tests -v           # 2. 네트워크 없는 테스트 (합성 HTML, 임시 워크스페이스)
-pip install 'curl_cffi>=0.15'                      # 3. 선택. 실사이트 확인 전에만 필요
-python3 scripts/kstartup_crawl.py list -o /tmp/ks.jsonl --max-pages 2   # 4. 실사이트 스모크 (네트워크 필요)
+# 1 컴파일 · 2 네트워크 없는 테스트 · 3 선택 의존성(실사이트 확인 전에만) · 4 실사이트 스모크(네트워크 필요)
+# 주의: zsh 대화형 셸은 명령 뒤의 '# 주석'을 인자로 넘긴다 — 주석은 줄을 따로 쓴다
+python3 -m py_compile scripts/*.py
+python3 -m unittest discover -s tests -v
+python3 -m pip install --user 'curl_cffi>=0.15'
+python3 scripts/kstartup_crawl.py list -o /tmp/ks.jsonl --max-pages 2
 ```
 
 4단계는 "fetch backend: curl_cffi"와 "page 1: 15 parsed"가 stderr에 나오면 정상이다. `0 items parsed`면 사이트 개편 또는 차단 — `docs/engineering-notes.md`의 구분법으로 판단한다.
