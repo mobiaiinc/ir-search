@@ -14,20 +14,35 @@ It crawls every currently-open announcement from K-Startup, Bizinfo, NIPA, KOCCA
 
 Why exhaustive review instead of keyword search: the programs an "AI startup" can actually win — content-production grants, art×tech residencies, social-service startup funds — never match the keyword "AI".
 
-## Sample output (excerpt)
+## Built for repeated use (v3)
 
-A run saves the report (md), raw jsonl, and verified announcement texts to `~/Documents/지원사업조사_<target>_<date>/`. The report looks like this (announcements themselves are in Korean):
+Survey state lives in the project's **`.ir-search/`** folder, not in the conversation. A survey that outlives one session, or that someone else picks up on another machine, resumes from the same point.
+
+```
+<project>/.ir-search/
+├── profile.md        applicant/item profile — later surveys just ask "anything changed?"
+├── worklog.md        run log — when, which sources, how many items, how many A/B/C
+├── queue.jsonl       work items — verify / manual / apply / follow-up / re-survey, with D-day
+├── decisions.md      verdict and configuration decisions with reasons
+└── runs/YYYYMMDD/    one survey: raw jsonl + announcement texts + report.md + stage marker
+```
+
+- **Resume**: if the session dies while verifying 30 candidates, the next session runs `status`, sees "stage verify, 12 items left in the queue", and continues
+- **Re-survey**: diffed against the previous run automatically — only **new / deadline-changed / closed** announcements are reported, instead of re-reading 250+ items
+- **Queue**: after the survey, "apply to Youth Startup Academy by 9/8 16:00" and "re-survey on 9/26" stay in the queue with D-days, appended to every chat reply
+
+## Sample output (excerpt)
 
 ```markdown
 # Support-program survey — ○○ (AI voice SaaS, pre-founder, Chungnam)
-Surveyed 2026-07-11 · reviewed all 262 K-Startup + 300 Bizinfo items → verified 31 candidates
+Surveyed 2026-09-05 · reviewed all 262 K-Startup + 300 Bizinfo items → verified 31 candidates
 
 ## Group A — Apply right now (by deadline)
 
 1. **2026 Youth Startup Academy, extra round** — KOSME
    - Support: up to ₩100M commercialization fund + space + mentoring
    - Eligibility: pre-founders ✓ · under 39 ✓ · nationwide ✓
-   - Deadline: 2026-07-18 16:00 (D-7) ⚠️ imminent
+   - Deadline: 2026-09-08 16:00 (D-3) ⚠️ imminent
    - https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=1784xx
 
 ## Group B — Unlocked by a requirement (roadmap)
@@ -41,14 +56,14 @@ Surveyed 2026-07-11 · reviewed all 262 K-Startup + 300 Bizinfo items → verifi
   "audio-content production pipeline". Risk: deliverable must be content
 
 ## Absence check
-- Pre-Startup Package: not currently open (usually announced in Feb)
+- Pre-Startup Package: not currently open (usually announced in Feb — queued for re-survey)
 
 ## Priority actions
-- by 7/18: apply to A-1 (note the 16:00 cutoff)
-- by 7/25: draft C-1 content framing, then call the agency to confirm
+- by 9/8: apply to A-1 (note the 16:00 cutoff)
+- by 9/15: draft C-1 content framing, then call the agency to confirm
 ```
 
-Every mentioned announcement carries its original URL; anything not stated in the announcement text is marked "unknown" rather than guessed.
+Every mentioned announcement carries its original URL; anything not stated in the announcement text is marked "unknown" rather than guessed. A reviewer subagent checks the report against the original texts before delivery (missing URLs, numbers not in the source, missing imminent flags).
 
 ## Covered sources
 
@@ -60,13 +75,26 @@ Every mentioned announcement carries its original URL; anything not stated in th
 | [KOCCA](https://www.kocca.kr) | Content-industry programs | `sources_crawl.py` |
 | [SMTECH](https://www.smtech.go.kr) | SME R&D calls | `sources_crawl.py` |
 
-More sources (NIA, IITP, IRIS, regional agencies) are catalogued in `references/sources.md`.
+More sources (NIA, IITP, IRIS, regional agencies) are catalogued in `references/sources.md`. When a site blocks the crawler it climbs a TLS-fingerprint ladder (safari → safari_ios → chrome → chrome_android → mobile host) automatically; if that fails the source is reported as "check manually" — no login or CAPTCHA circumvention.
 
 ## Install
 
+Three ways; the result is the same.
+
 ```bash
-git clone https://github.com/djfksjd/ir-search.git ~/.claude/skills/ir-search
-pip install 'curl_cffi>=0.15'   # recommended (avoids TLS-fingerprint blocking)
+# A. clone + symlink (git pull updates it). Links the skill and its two subagents into ~/.claude
+git clone https://github.com/mobiaiinc/ir-search.git && cd ir-search && ./install.sh
+
+# B. for one project only
+./install.sh --project ~/work/my-startup
+
+# C. plugin marketplace (inside Claude Code)
+/plugin marketplace add mobiaiinc/ir-search
+/plugin install ir-search@ir-search
+```
+
+```bash
+pip install 'curl_cffi>=0.15'   # recommended (avoids TLS-fingerprint blocking); falls back to urllib
 ```
 
 ## Use
@@ -78,41 +106,68 @@ With your project folder open in Claude Code:
 (Survey the support programs that fit this project)
 ```
 
-or `/ir-search`. Claude reads the project context from the folder and asks only for the missing profile fields (founding stage, region, needs) before starting.
+or `/ir-search` (`/ir-search:ir-search` when installed as a plugin). Claude checks `.ir-search/`, reads project context from the folder if there is no profile yet, asks for the missing fields (founding stage, region, needs) once, and starts.
 
-**Built for repeated use:**
-- The profile is saved to `ir-search-profile.md` in your project folder — subsequent surveys just confirm "anything changed?" instead of re-asking
-- Re-surveys are diffed against the previous run automatically, reporting only **new announcements / deadline changes / closed opportunities** instead of re-reading 250+ items every time
+Later:
 
-The crawlers also work standalone:
+```
+새로 나온 지원사업 있나?   → diff against the previous run: new / deadline changes / closed only
+지원사업 큐 보여줘         → open work items with D-days
+```
+
+The crawlers and the state tool also work standalone:
 
 ```bash
-python3 scripts/kstartup_crawl.py list -o all.jsonl            # all open K-Startup announcements
-python3 scripts/kstartup_crawl.py detail 178481 -o details/    # K-Startup detail pages
-python3 scripts/sources_crawl.py list bizinfo -o biz.jsonl     # Bizinfo
-python3 scripts/sources_crawl.py list all -o sources.jsonl     # all four extra sources
-python3 scripts/sources_crawl.py detail <URL> -o details/      # detail page from any source
+python3 scripts/kstartup_crawl.py list -o all.jsonl --drop-expired         # all open K-Startup announcements
+python3 scripts/kstartup_crawl.py detail 178481 -o details/                # detail-page text
+python3 scripts/sources_crawl.py list bizinfo -o biz.jsonl --max-pages 20  # Bizinfo
+python3 scripts/sources_crawl.py list all -o sources.jsonl                 # all four extra sources
+python3 scripts/diff_surveys.py <previous run dir> <current run dir> --out new.jsonl
+python3 scripts/survey_state.py status                                     # profile · runs · queue
+python3 scripts/survey_state.py queue list                                 # work items + D-day
 ```
 
 ## Layout
 
 ```
 ir-search/
-├── SKILL.md                    # workflow (profile → collect all → review all → verify → 3-tier report)
+├── SKILL.md                    # workflow (status → profile → collect all → review all → verify → 3-tier → review → update state)
 ├── scripts/
+│   ├── fetchlib.py             # shared HTTP: fingerprint ladder, block detection, retry, delay, date utils
 │   ├── kstartup_crawl.py       # K-Startup crawler
 │   ├── sources_crawl.py        # Bizinfo / NIPA / KOCCA / SMTECH crawler
-│   └── diff_surveys.py         # incremental re-survey diff (new / changed / closed)
-└── references/sources.md       # source registry (verified access recipes + secondary sources)
+│   ├── diff_surveys.py         # incremental re-survey diff (new / changed / closed / stale sources)
+│   └── survey_state.py         # .ir-search/ workspace (init / status / run / queue / decide)
+├── agents/
+│   ├── ir-detail-verifier.md   # structured eligibility extraction with evidence quotes (15+ candidates)
+│   └── ir-report-reviewer.md   # report QA against source texts and the queue
+├── references/
+│   ├── sources.md              # source registry (verified access recipes + secondary sources)
+│   ├── workspace-format.md     # .ir-search/ file spec
+│   └── report-format.md        # report template, verification fields, verdict rules, review checklist
+├── tests/                      # network-free unittest (synthetic HTML, temp workspaces)
+├── docs/                       # for contributors: architecture, rules, standards, notes, operations, contracts, tracking/
+├── CLAUDE.md / AGENTS.md       # entry point for agents editing this repository
+├── install.sh                  # local install (symlink/copy, user- or project-level)
+└── .claude-plugin/             # plugin manifests
 ```
 
-Note: `SKILL.md` is written in Korean — the whole domain (announcements, eligibility criteria, report vocabulary) is Korean, and the model works with it natively.
+Note: `SKILL.md`, the references, the agents, and the workspace files are written in Korean — the whole domain (announcements, eligibility criteria, report vocabulary) is Korean, and the model works with it natively.
+
+## Development
+
+```bash
+python3 -m unittest discover -s tests -v   # runs without network access
+```
+
+After changing a parser, run a live smoke test (`list --max-pages 2`) from a machine with network access and update the verification date in `references/sources.md`. Rules and traps are in `docs/`.
 
 ## Caveats
 
 - Announcement details (deadlines, eligibility, amounts) change frequently. **Always confirm with the accepting agency before applying.** The report reflects the announcement text at survey time.
 - Only public announcement pages are accessed, with a delay between requests. Please respect the target sites' terms of service.
+- `.ir-search/` holds no personal data beyond the profile axes (founding stage, region, age band, ...). Whether to commit it is the project's call (`runs/*/details/` is large and usually excluded).
 
 ## License
 
-MIT
+MIT · upstream: [djfksjd/ir-search](https://github.com/djfksjd/ir-search)

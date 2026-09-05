@@ -6,3 +6,6 @@ details/
 output/
 evals/
 *-workspace/
+# runtime workspace created by survey_state.py in *user* projects; kept out of this repo
+.ir-search/
+ir-search-profile.md.migrated

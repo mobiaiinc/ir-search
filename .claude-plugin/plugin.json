@@ -1,0 +1,11 @@
+{
+  "name": "ir-search",
+  "displayName": "ir-search — 한국 정부 지원사업 전수조사",
+  "version": "3.0.0",
+  "description": "Exhaustive survey of Korean government support programs (K-Startup, Bizinfo, NIPA, KOCCA, SMTECH): crawl every open announcement, verify eligibility against the original text, classify into apply-now / roadmap / reframe, and keep survey state (profile, worklog, queue, decisions) in the project's .ir-search/ folder.",
+  "author": { "name": "mobiaiinc" },
+  "homepage": "https://github.com/mobiaiinc/ir-search",
+  "repository": "https://github.com/mobiaiinc/ir-search",
+  "license": "MIT",
+  "keywords": ["korea", "government-support", "grants", "startup", "k-startup", "bizinfo", "crawler", "survey", "지원사업", "창업지원"]
+}
