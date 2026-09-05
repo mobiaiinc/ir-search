@@ -71,11 +71,13 @@
 
 ### 차단 시 에스컬레이션 (순서대로, 한 단계 성공하면 중단)
 
-1. curl_cffi `impersonate='safari'` (동봉 크롤러 기본값)
-2. 다른 TLS 지문으로 재시도: `safari_ios` → `chrome` → `chrome_android` (사이트 개편·WAF 강화 대응)
+1~4는 `scripts/fetchlib.py`가 자동으로 수행한다 (두 크롤러가 공유). 크롤러를 새로 쓸 때도 `Fetcher`를 쓰면 같은 사다리를 탄다.
+
+1. curl_cffi `impersonate='safari'` (기본값)
+2. 다른 TLS 지문으로 재시도: `safari_ios` → `chrome` → `chrome_android` (사이트 개편·WAF 강화 대응). 한 번 성공한 지문은 그 세션 동안 유지된다
 3. 모바일 URL 변형 (`www.` → `m.`) — 모바일 페이지는 방어가 얕은 경우가 많음
-4. HTTP 200이어도 본문에 "Access Denied"/챌린지 마커가 있으면 성공이 아니다 — 항목 파싱 건수로 최종 판정
-5. 전부 실패하면 그 소스는 억지로 뚫지 말고 "수동 확인" 안내로 대체 (로그인 우회·CAPTCHA 우회 금지)
+4. HTTP 200이어도 본문에 "Access Denied"/챌린지 마커가 있으면 성공이 아니다 — `looks_blocked()`가 본문 앞 4KB의 마커로 판정하고, 크롤러는 파싱 건수 0을 추가 경고한다
+5. 전부 실패하면 `Blocked` 예외 → 크롤러가 그 소스를 `BLOCKED sources`로 보고하고 종료 코드 2. 억지로 뚫지 말고 `survey_state.py queue add --type manual`로 등록해 "수동 확인" 안내로 대체 (로그인 우회·CAPTCHA 우회 금지)
 
 ### JS 로딩 사이트 폴백 (CCEI류)
 

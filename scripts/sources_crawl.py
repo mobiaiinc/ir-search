@@ -13,78 +13,37 @@ Only public announcement pages are accessed; no login, no private areas.
 A polite delay is applied between requests.
 
 Usage:
-  python3 sources_crawl.py bizinfo -o bizinfo.jsonl --max-pages 20
-  python3 sources_crawl.py all -o all_sources.jsonl
+  python3 sources_crawl.py list bizinfo -o bizinfo.jsonl --max-pages 20 --drop-expired
+  python3 sources_crawl.py list all -o all_sources.jsonl
+  python3 sources_crawl.py detail <URL> <URL> -o details/
 
 Unified JSONL schema:
   {"source", "id", "title", "field", "org", "apply_start", "apply_end",
    "reg_date", "url"}
 
-Dependency: curl_cffi>=0.15 recommended (TLS-fingerprint friendly).
-Falls back to urllib; if blocked, an install hint is printed.
+HTTP handling (TLS-fingerprint escalation, block detection, retry, delay) lives in
+fetchlib.py next to this file. Dependency: curl_cffi>=0.15 recommended; falls back
+to urllib with an install hint when blocked.
 """
 import argparse
 import html as htmllib
 import json
+import os
 import re
 import sys
-import time
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fetchlib import Blocked, Fetcher, is_past, norm_date, strip_html  # noqa: E402
 
 DELAY = 0.4  # seconds between requests (politeness)
 
 
-def make_fetcher():
-    """Prefer curl_cffi (Safari TLS fingerprint); fall back to urllib."""
-    try:
-        from curl_cffi import requests as cr
-
-        sess = cr.Session(impersonate="safari")
-
-        def fetch(url, data=None):
-            # data=dict switches to a POST form submit (some boards paginate that way)
-            if data is None:
-                r = sess.get(url, timeout=30)
-            else:
-                r = sess.post(url, data=data, timeout=30)
-            return r.status_code, r.text
-
-        return fetch, "curl_cffi"
-    except ImportError:
-        import urllib.parse
-        import urllib.request
-
-        def fetch(url, data=None):
-            body = urllib.parse.urlencode(data).encode() if data is not None else None
-            req = urllib.request.Request(
-                url,
-                data=body,
-                headers={
-                    "User-Agent": (
-                        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                        "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15"
-                    )
-                },
-            )
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                return resp.status, resp.read().decode("utf-8", "replace")
-
-        return fetch, "urllib"
+def log(msg):
+    print(f"[ir-search] {msg}", file=sys.stderr)
 
 
 def clean(s):
     return re.sub(r"\s+", " ", htmllib.unescape(s or "")).strip()
-
-
-def norm_date(s):
-    """Normalize date-ish strings to YYYY-MM-DD; return input if not parseable."""
-    s = clean(s)
-    m = re.search(r"(\d{4})[.\-/\s]+(\d{1,2})[.\-/\s]+(\d{1,2})", s)
-    if m:
-        return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
-    m = re.search(r"(\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})", s)  # 26.07.10
-    if m:
-        return f"20{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
-    return s
 
 
 def split_period(s):
@@ -239,56 +198,52 @@ SOURCES = {
     "smtech": page_smtech,
 }
 
+ALLOWED_DETAIL_HOSTS = ("bizinfo.go.kr", "nipa.kr", "kocca.kr", "smtech.go.kr", "k-startup.go.kr")
+
 
 def crawl(source, fetch, max_pages):
+    """Crawl one source. Returns (items, blocked) — blocked=True means the ladder was exhausted."""
     pager = SOURCES[source]
     seen = {}
     for page in range(1, max_pages + 1):
-        items, has_more = pager(fetch, page)
+        try:
+            items, has_more = pager(fetch, page)
+        except Blocked as e:
+            log(f"{source} p{page}: {e} — stopping this source")
+            return list(seen.values()), True
+        if not items and page == 1:
+            log(f"{source} p1: 0 items parsed — site layout changed or soft-blocked; check the HTML")
         new = [i for i in items if i["id"] not in seen]
         for i in items:
             seen[i["id"]] = i
-        print(
-            f"[ir-search] {source} p{page}: {len(items)} parsed, {len(new)} new, total {len(seen)}",
-            file=sys.stderr,
-        )
+        log(f"{source} p{page}: {len(items)} parsed, {len(new)} new, total {len(seen)}")
         if not has_more or not new:
             break
-        time.sleep(DELAY)
-    return list(seen.values())
-
-
-def strip_html(text):
-    text = re.sub(r"<script[\s\S]*?</script>|<style[\s\S]*?</style>", "", text)
-    text = re.sub(r"<[^>]+>", "\n", text)
-    text = htmllib.unescape(text)
-    return re.sub(r"\n\s*\n+", "\n", text)
+    return list(seen.values()), False
 
 
 def cmd_detail(fetch, urls, outdir):
     """Save the text of announcement detail pages (any source) for eligibility checks."""
-    import os
-
     os.makedirs(outdir, exist_ok=True)
-    allowed = ("bizinfo.go.kr", "nipa.kr", "kocca.kr", "smtech.go.kr", "k-startup.go.kr")
-    for n, url in enumerate(urls):
+    for url in urls:
         host = re.sub(r"^https?://([^/]+).*", r"\1", url)
-        if not host.endswith(allowed):
-            print(f"[ir-search] skip non-source url: {url[:60]}", file=sys.stderr)
+        if not host.endswith(ALLOWED_DETAIL_HOSTS):
+            log(f"skip non-source url: {url[:60]}")
             continue
         try:
             status, h = fetch(url)
             if status != 200:
-                print(f"[ir-search] {url[:60]}: HTTP {status}", file=sys.stderr)
+                log(f"{url[:60]}: HTTP {status}")
                 continue
             name = re.sub(r"\W+", "_", url.split("://", 1)[1])[:80]
             path = f"{outdir}/{name}.txt"
             with open(path, "w", encoding="utf-8") as f:
                 f.write(url + "\n\n" + strip_html(h))
-            print(f"[ir-search] saved: {path}", file=sys.stderr)
+            log(f"saved: {path}")
+        except Blocked as e:
+            log(f"{url[:60]}: {e} — record as '수동 확인'")
         except Exception as e:  # noqa: BLE001 — skip failures, keep going
-            print(f"[ir-search] {url[:60]}: error {e}", file=sys.stderr)
-        time.sleep(DELAY)
+            log(f"{url[:60]}: error {e}")
 
 
 def main():
@@ -307,6 +262,9 @@ def main():
         help="page cap per source (bizinfo lists many announcements — "
         "recent pages usually suffice)",
     )
+    p_list.add_argument(
+        "--drop-expired", action="store_true", help="drop items whose apply_end is already past"
+    )
 
     p_det = sub.add_parser("detail", help="save detail-page text for given URLs")
     p_det.add_argument("urls", nargs="+", help="announcement detail URLs")
@@ -314,27 +272,32 @@ def main():
 
     args = ap.parse_args()
 
-    fetch, backend = make_fetcher()
-    print(f"[ir-search] fetch backend: {backend}", file=sys.stderr)
-    if backend == "urllib":
-        print(
-            "[ir-search] tip: pip install 'curl_cffi>=0.15' if requests get blocked",
-            file=sys.stderr,
-        )
+    fetcher = Fetcher(delay=DELAY)
+    log(f"fetch backend: {fetcher.backend_name}")
 
     if args.cmd == "detail":
-        cmd_detail(fetch, args.urls, args.output)
+        cmd_detail(fetcher.fetch, args.urls, args.output)
         return
 
     names = list(SOURCES) if args.source == "all" else [args.source]
     out = []
+    blocked = []
     for name in names:
-        out.extend(crawl(name, fetch, args.max_pages))
-        time.sleep(DELAY)
+        items, was_blocked = crawl(name, fetcher.fetch, args.max_pages)
+        out.extend(items)
+        if was_blocked:
+            blocked.append(name)
+    if args.drop_expired:
+        kept = [r for r in out if not is_past(r.get("apply_end"))]
+        log(f"drop-expired: {len(out) - len(kept)} past-deadline items removed")
+        out = kept
     with open(args.output, "w", encoding="utf-8") as f:
         for i in out:
             f.write(json.dumps(i, ensure_ascii=False) + "\n")
-    print(f"[ir-search] saved: {args.output} ({len(out)} items)", file=sys.stderr)
+    log(f"saved: {args.output} ({len(out)} items)")
+    if blocked:
+        log(f"BLOCKED sources (report as '수동 확인'): {', '.join(blocked)}")
+        sys.exit(2)
 
 
 if __name__ == "__main__":
