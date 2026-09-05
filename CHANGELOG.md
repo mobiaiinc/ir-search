@@ -9,6 +9,7 @@
 - **Plugin packaging**: `.claude-plugin/plugin.json` + `marketplace.json` (single-skill plugin with root `SKILL.md`), `install.sh` for user- or project-level symlink installs.
 - **Project harness** for contributors: `CLAUDE.md`/`AGENTS.md`, `docs/` (architecture, business rules, standards, engineering notes, operations, contracts, security) and `docs/tracking/` (status, findings, decision records).
 - Reports move from `~/Documents/지원사업조사_*` to `<project>/.ir-search/runs/<date>/report.md` (a copy elsewhere is fine; the run folder is the diff baseline).
+- `run last` / `run current` order runs by the `started` timestamp, not the folder name (`runs/20260905-10` no longer sorts before `-2`).
 
 ## v2 (2026-07) — multi-source
 

@@ -10,3 +10,4 @@
 | [0004](0004-fetch-escalation-in-fetchlib.md) | 차단 에스컬레이션을 공용 모듈이 자동 수행 | 2026-09-05 |
 | [0005](0005-drop-expired-keeps-unparseable.md) | `--drop-expired`는 파싱되는 과거 날짜만 버린다 | 2026-09-05 |
 | [0006](0006-subagents-extract-not-judge.md) | 서브에이전트는 추출·검수만 하고 판정은 상위 에이전트가 한다 | 2026-09-05 |
+| [0007](0007-reference-project-alignment.md) | 하네스 문서 체계는 dryforge, 에이전트·스킬 배치는 J-Booster 관례, 워크스페이스 형식은 자체 유지 | 2026-09-05 |
