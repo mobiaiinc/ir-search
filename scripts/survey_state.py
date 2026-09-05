@@ -223,13 +223,21 @@ def cmd_status(args):
 # ---------------------------------------------------------------------------
 
 def load_runs(root):
+    """All runs, oldest first.
+
+    Ordered by the `started` timestamp in run.json, not by folder name: names are
+    `YYYYMMDD`, `YYYYMMDD-2`, … and a plain string sort would put `-10` before `-2`,
+    which would make `run last` hand diff mode a stale baseline. Folder name is the
+    tie-breaker for hand-made runs without a timestamp.
+    """
     runs = []
-    for d in sorted((root / "runs").glob("*")):
+    for d in (root / "runs").glob("*"):
         meta = d / "run.json"
         if d.is_dir() and meta.exists():
             r = json.loads(meta.read_text(encoding="utf-8"))
             r["dir"] = d
             runs.append(r)
+    runs.sort(key=lambda r: (r.get("started") or "", r["dir"].name))
     return runs
 
 

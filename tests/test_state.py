@@ -114,6 +114,28 @@ class StateTests(unittest.TestCase):
         self.assertIn("## 2026-09-05 — 프리팁스 A→B", text)
         self.assertIn("- 이유: 비수도권 법인 요건", text)
 
+    def test_last_run_orders_by_started_not_folder_name(self):
+        # runs/20260905-10 sorts before runs/20260905-2 as a string; `run last`
+        # must still return the most recently *started* finished run.
+        self.init()
+        runs = self.root / "runs"
+        for name, started in (("20260905", "2026-09-05T09:00:00"),
+                              ("20260905-2", "2026-09-05T10:00:00"),
+                              ("20260905-10", "2026-09-05T18:00:00")):
+            d = runs / name
+            d.mkdir(parents=True)
+            (d / "run.json").write_text(json.dumps({
+                "started": started, "mode": "full", "sources": ["kstartup"],
+                "stage": "done", "finished": started, "report": f".ir-search/runs/{name}/report.md",
+            }), encoding="utf-8")
+        self.assertTrue(self.run_cmd("run", "last").endswith("20260905-10"))
+        # and `run current` picks the most recently started open run the same way
+        (runs / "20260905-3").mkdir()
+        (runs / "20260905-3" / "run.json").write_text(json.dumps(
+            {"started": "2026-09-05T19:00:00", "mode": "diff", "sources": [], "stage": "verify"}),
+            encoding="utf-8")
+        self.assertIn("20260905-3", self.run_cmd("run", "current"))
+
     def test_status_without_workspace_exits(self):
         with self.assertRaises(SystemExit):
             self.run_cmd("status")
