@@ -40,8 +40,9 @@ python3 scripts/kstartup_crawl.py list -o /tmp/ks.jsonl --max-pages 2
 
 ```bash
 cd ~/work/my-startup
-python3 ~/.claude/skills/ir-search/scripts/survey_state.py init     # .ir-search/ 생성 (레거시 프로필 이관)
-python3 ~/.claude/skills/ir-search/scripts/survey_state.py status   # 비어 있음을 확인
+# .ir-search/ 생성 (레거시 프로필 이관) → 비어 있음을 확인
+python3 ~/.claude/skills/ir-search/scripts/survey_state.py init
+python3 ~/.claude/skills/ir-search/scripts/survey_state.py status
 ```
 
 이후는 SKILL.md가 절차대로 부른다. 사람이 직접 볼 파일: `.ir-search/profile.md`(편집 가능), `worklog.md`, `queue.jsonl`(`queue list`로 보기), `decisions.md`, `runs/<날짜>/report.md`.
