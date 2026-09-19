@@ -186,6 +186,101 @@
 
 ---
 
+## 4. 세그먼트·자동화 대응 현황(경쟁사별)
+
+> 추가 조사일 2026-09-19, 웹 검색 24회(일·영). 추가 타깃 (a) 지방발 국내 出張者·単身赴任, (b) 북미·유럽·대만·호주 "일본 팬" 장기체류자에 대한 대응과, 운영 자동화(전자계약·셀프체크인·eKYC·다국어·결제) 수준을 경쟁사별로 정리. 기업 사이트 원문은 대부분 프록시 차단 → 스니펫 확인분만 기재, 나머지 **미확인**.
+
+| 업체 | (a) 出張者/単身赴任 대응(法人契約·請求書払い·領収書) | (b) 欧米豪·台湾 장기체류 대응(영어·중국어 번체·해외 결제) | (c) 온라인 電子契約(벤더) | (d) 셀프체크인·스마트락(벤더) | (e) eKYC/本人確認 방식 | (f) 다국어 자동화(AI 챗 등) | (g) 결제(해외카드·分割) | (h) 인력 비율 |
+|---|---|---|---|---|---|---|---|---|
+| **레오파레스21 먼슬리** | 법인계약 64.6%가 주력; 법인 퇴실 정산은 후일 법인 앞 請求書 발행 [http://leopalace21.custhelp.com/app/answers/detail/a_id/8]; "領収証電子システム"(법인번호로 로그인, Web에서 영수증 확인·인쇄) [http://www.leopalace.net/osirase/receipt.html] [https://ap5.econtract.jp/l21-receipt/spLoginIndividual/]; 법인 청구명세 Web [https://leo-hojinweb.leopalace21.com/meisai/initiate/]; 법인 FAQ [https://support.leopalace21.com/hc/ja/articles/4407899851799-%E6%B3%95%E4%BA%BA%E5%A5%91%E7%B4%84] | 사이트 5개 언어(영·간체·번체·한·베)(§2-A); 해외 거주자 원격 계약 가능 여부 **미확인** | 벤더 **미확인**(영수증 시스템이 econtract.jp 도메인이나 계약 전자화 여부 스니펫 미확인) | **미확인** | **미확인**(재류카드 요건 §2-A 참조) | 외국어 전화 창구(유인) [https://help.leopalace21.com/answer/64740a4454d8309d73214687/]; AI 챗 **미확인** | 이용료 일괄 선불; 해외카드·분할 **미확인** | **미확인** |
+| **東急ステイ / 레지던스** | 사전 송금 시 請求書 발행 가능, 현지 결제 시 체크아웃 시 領収書 [https://www.tokyustay.co.jp/faq/]; 東急ホテルズ "Webコーポレートカスタマー"(입회·연회비 무료, 법인 일괄 청구) [https://www.tehaiplus.com/media/corporate-contract/tokyuhotels]; 레지던스 법인 페이지(24시간 프론트) [https://www.tokyustayresidence.com/business/] | 영문 예약(호텔 OTA); 번체·해외 결제 **미확인** | 호텔 숙박(임대차 계약 불요); 레지던스 계약 방식 **미확인** | 유인 프론트 24시간(레지던스); 셀프체크인 **미확인** | 旅館業法 프론트 대면(추정) | **미확인** | 호텔 카드 결제; 분할 **미확인** | **미확인** |
+| **グッドマンスリー / W&M** | 내국인 출장·법인이 주력(§1); 請求書払い는 운영사별 → **미확인** | "외국인 대응" 필터 [https://www.good-monthly.com/type/?type=foreign]; 영어 UI **미확인** | 운영사별, 포털 자체 전자계약 없음(**미확인**) | 운영사별 **미확인** | 운영사별 **미확인** | **미확인** | "카드결제 가능" 필터 [https://www.good-monthly.com/type/?type=card]; 해외카드 **미확인** | **미확인** |
+| **Sakura House** | 법인 계약 언급 검색상 없음 → **미확인** | 완전 영어; 카드 VISA·Master·AMEX·UnionPay·JCB·Diners·Discover + Alipay·WeChat Pay·PayPal [https://www.sakura-house.com/contact/faq] [https://www.sakura-house.com/news/notice-of-type-addition-for-credit-card-payment] | 예약·결제·퇴거통지는 온라인 폼 [https://www.sakura-house.com/news/all-you-can-finish-by-online]이나 **계약 서명은 체크인 당일 신주쿠 라운지에서 여권 제시 후 서명·열쇠 수령** [https://www.sakura-house.com/about/rent] → 전자계약 아님 | 없음(라운지 대면 열쇠 인도) | 여권 대면 확인 | **미확인** | 해외카드·Alipay·WeChat 가능; 분할 **미확인** | **미확인** |
+| **Oakhouse** | 법인 외국인 기숙사(§1); 請求書払い **미확인** | 온라인·해외 신청, 카드 결제, 보증인·礼金 불요 [https://www.oakhouse.jp/eng/apartment] | **GMOサイン**: 이메일로 받은 URL에서 계약서 열람·서명 [https://www.oakhouse.jp/eng/movein] | **미확인**(열쇠 인도 방식 스니펫 미확인) | **미확인** | **미확인** | 카드 가능; 해외카드 종류·분할 **미확인** | **미확인** |
+| **Weave Living Japan** | 법인 프로그램 **미확인** | 영어 완결, 현지통화 카드 결제 [https://tokyocheapo.com/living/weave-living-furnished-apartments/] | 전자서명으로 약 15분 만에 정기차가 계약 온라인 체결(벤더 **미확인**) [https://tokyocheapo.com/living/weave-living-furnished-apartments/] | 영업시간 외 도착 시 현지 셀프체크인, 계약 개시 수 시간 전 이메일 안내; **셀프체크인 선택 시 운영팀이 2영업일 내 방문해 ID 확인·입주 점검** [https://www.weave-living.com/faq](FAQ는 HK 공통 페이지) | 사후 대면 ID 확인(eKYC 벤더 **미확인**) | **미확인** | 해외카드 현지통화; 분할 **미확인** | **미확인** |
+| **Blueground / Hmlet Japan** | 글로벌 4,000사+ 법인 이용, 도쿄 corporate housing 페이지 [https://www.theblueground.com/m/corporate-apartments/tokyo-jpn]; 일본 법인 請求書 **미확인** | 영어 완비, 글로벌 결제(§1) | 글로벌 온라인 예약·계약; 일본 계약 형태·벤더 **미확인** | Guest App 셀프체크인 + 24/7 지원 [https://www.theblueground.com/m/corporate-apartments/tokyo-jpn] | **미확인** | 앱 기반(AI 여부 **미확인**) | **미확인** | **미확인** |
+| **MetroResidences** | 법인 경비·과세 가이드 게재(장기출장·社宅) [https://expat.metroresidences.com/jp/ja/business-trip-expense/]; 인보이스에 세금·옵션 전액 명시 [https://info.metroresidences.com/knowledge/metroresidences-japan-faq-all-in-one] | 영어 UI·컨시어지(§1) | 온라인 예약; 전자계약 벤더 **미확인** | 건물 스마트락으로 심야 도착도 직접 체크인 [https://info.metroresidences.com/knowledge/metroresidences-japan-faq-all-in-one] | **미확인** | 컨시어지(유인) | **미확인** | **미확인** |
+| **Section L / MIMARU** | 호텔 領収書(추정); 법인 청구 **미확인** | 영어 완비(§1) | 숙박(계약 없음) | 엘리베이터 옆 태블릿 셀프체크인 → 룸번호·스마트락 코드 발급, 현관 도어코드는 예약 확인 메일 [https://section-l.co/hello-asakusa-east/] (스마트락 벤더 **미확인**); MIMARU **미확인** | 旅館業法 태블릿 본인확인(방식 **미확인**) | **미확인** | OTA·카드; 분할 **미확인** | **미확인** |
+| **Unito** | 법인 출장 플랜(타사 예약 사이트 대비 최대 약 70% OFF) [https://prtimes.jp/main/html/rd/p/000000136.000033908.html]; **법인은 請求書払い(은행 이체)만, 카드 불가** [https://business.unito.life/]; 客先常駐·중단기 単身赴任 용도, 미숙박일 임대료 불요 [https://www.travelvoice.jp/20250114-157011]; 법인계약 가능 30일~(리렌트 60일~) [https://unito.life/monthly] | 2025.3 영어 UI(§2-B); 번체·해외카드 **미확인** | "스마트폰 완결": 계약·연장·퇴거를 앱에서, 전화·종이 불요 [https://unito.life/] (벤더 **미확인**) | 셀프체크인 다수 [https://unito.life/] (벤더 **미확인**) | **미확인** | LINE 응대(유인, 후기상 부실 §2-B); AI **미확인** | 개인 카드 **미확인** | **미확인** |
+| **Sumyca / matsuri (m2m)** | 개인·법인 대상 [https://sites.google.com/matsuri-tech.com/sumyca-tokutei]; 請求書 **미확인** | 영문 페이지(§2-B) | 검색~본인확인~계약~결제~스마트락 번호 전달까지 온라인 완결 [https://www.sumyca.com/en] (자사 시스템, 벤더 **미확인**) | 스마트락 번호 온라인 전달; 자사 "m2m Check-in" 약 800시설 도입 [https://prtimes.jp/main/html/rd/p/000000066.000022329.html] | m2m Check-in: 24시간 스태프가 본인확인 후 열쇠 인도(유인 원격) [https://prtimes.jp/main/html/rd/p/000000066.000022329.html] | **미확인** | **미확인** | **미확인** |
+| **Airbnb 30박+** | 플랫폼 영수증; 법인 청구서 **미확인** | 완전 다국어·글로벌 결제 | 임대차 계약서 없음(플랫폼 약관) | 호스트별(키박스·스마트락) | 플랫폼 ID + 민박법상 호스트 대면/ICT 본인확인 의무 [https://www.hotelsmart.jp/id-checkin/737/] | 자동 번역 | 해외카드 가능; 분할 **미확인** | — |
+| **GaijinPot / Best-Estate / Wagaya** | **미확인** | GaijinPot 영어 스태프 전 과정 지원 [https://apartments.gaijinpot.com/en/real-estate-agent/details/12]; Wagaya 상담·내견을 온라인, **서명 절차는 입국 후 → 열쇠 인도** [https://wagaya-japan.com/jp/online.php]; Best-Estate 7개 언어(§2-C) | 중개 매물별(宅建 IT重説 가능하나 사이트 표준화 **미확인**) | 대면 열쇠 인도(추정) | 재류카드·여권(중개 통상) | **미확인** | GaijinPot 카드(§2-C) | **미확인** |
+| **홈즈재팬** | **미확인** | 한국어 문의~계약~결제~입주 후(§2-C); 영어·번체 **미확인** | **미확인** | **미확인** | **미확인** | **미확인** | **미확인** | **미확인** |
+
+- 소결: 出張者·単身赴任(請求書払い·법인 일괄 청구)을 명시적으로 자동화한 곳은 레오파레스(전자 영수증·법인 Web 명세)와 Unito(법인 출장 플랜, 은행 이체 한정)이며, 欧米豪 장기체류자용 "영어 온라인 완결"은 Weave·Blueground·MetroResidences·Sumyca. **두 세그먼트를 한 상품·한 자동화 스택으로 동시에 받는 사업자는 검색상 없음**(Unito가 가장 근접하나 법인 카드 불가·품질 편차).
+- 中国語 번체(대만) UI를 명시한 곳은 레오파레스(번체 포함 5개 언어)뿐, 나머지는 **미확인**.
+
+---
+
+## 5. 자동화·전자계약·보안 벤더 맵 (Japan)
+
+> 가격은 스니펫에 표기된 공개 가격만 기재(세금 포함 여부는 원문 표기 따름). "API 제공" 열은 스니펫에서 확인된 경우만 ○.
+
+| 벤더 | 카테고리 | 가격(공개 시) | API 제공 | 외국인 ID/多言語 지원 | 비고 | URL |
+|---|---|---|---|---|---|---|
+| **Beds24** | PMS/サイトコントローラー | 초기 무료, 월 3,960엔(세포함)~, 1개월 무료 트라이얼 | ○(공식 API; 상세 **미확인**) | 다국어 UI(**미확인**) | 간이숙소 분야 국내 점유율 63.1% No.1 표기, PMS·예약엔진 표준 탑재 | [https://checkinn.jp/blog/sitecontroller-comparison/] [https://liskul.com/site-controller-comparison-162067] |
+| **AirHost** | PMS/サイトコントローラー | **미확인** | ○(KEY STATION과 API 연계 2019.10) | **미확인** | Airbnb 중심 민박·바케이션렌탈 추천; 청소 대행 가이드도 제공 | [https://airhost.jp/resources/channelmanagers-compared] [https://prtimes.jp/main/html/rd/p/000000021.000020131.html] |
+| **ねっぱん!** | サイトコントローラー | 5실 이하 월 5,500엔, 6실+ 월 8,800엔 | **미확인** | **미확인** | 라쿠텐 자본 | [https://liskul.com/site-controller-comparison-162067] |
+| **TL-リンカーン** | サイトコントローラー | **미확인** | **미확인** | **미확인** | 여행사(JTB·日本旅行) 경유·단체 예약 강점, 민박엔 과잉 | [https://www.ryokan-news.com/articles/site-controller-comparison-ota-channel-manager-guide] |
+| **matsuri technologies m2m** | 民泊×マンスリー切替 SaaS + 체크인 | 민박→먼슬리 전환 Lite 플랜 월 2,000엔~ [https://www.s-housing.jp/archives/201052]; 민박×먼슬리 겸용 보험 연 16,800엔 정액 [https://www.nikkan.co.jp/releases/view/42131]; 일부 기능 무료화 [https://www.zenchin.com/news/matsuri-technologies-2.php] | **미확인** | m2m Check-in 24시간 유인 본인확인(다국어 **미확인**) | m2m Check-in 약 800시설 [https://prtimes.jp/main/html/rd/p/000000066.000022329.html]; 2018 Airbnb·GPlus 제휴 [https://thebridge.jp/2018/08/matsuri-technologies-airbnb-japan-g-plus-media] | [https://www.matsuri.tech/services] |
+| **Unito** | 民泊×居住 하이브리드(자사 운영, 외부 SaaS 제공 여부 **미확인**) | — | **미확인** | 영어 UI(2025.3) | 리렌트(미숙박일 임대료 차감) | [https://unito.life/] |
+| **KEY STATION(Keeyls)** | 무인 열쇠 인도+본인확인(키박스·태블릿, 패밀리마트 등 설치) | 열쇠당 월 1,000엔+이용당 500엔, 또는 월 3,000엔 무제한 | ○(AirHost PMS와 API 연계: 객실 배정·게스트 정보·체크인 상태 자동 동기) | 24시간 콜센터 화상 본인확인(다국어 **미확인**) | 旅館業법·민박법 대응 무인 프론트, 회의실·카셰어에도 사용 | [https://keeyls.com/service/key-station/] [https://realestate-it.co.jp/key-station/] [https://livhub.jp/news/airhost-pms-key-station.html] |
+| **RemoteLOCK(構造計画研究所)** | 스마트락(공사형·암호식) | 본체 66,000엔(세포함)+공사비, 시스템 월 1,650~2,200엔/대; 비즈니스 스탠다드 월 2,000엔/대; 렌탈 월 5,500엔/대(초기 0) | ○(무료 API, Airbnb·Booking 등 예약 연계·자동 코드 발급) | — | 다물건 관리 표준, 상급자용 | [https://remotelock.kke.co.jp/prices/] [https://www.smakey-navi.com/smartlock/remotelock.html] [https://hotelier.jp/inboundnews/remote-lock-2.html] |
+| **Qrio Lock** | 스마트락(후부착) | 본체 25,000엔~, 월액 없음 | **미확인** | — | 양면테이프 설치, PIN 50개 동시(시간 조건); **2026 서포트 종료·대체 검토 보도** | [https://minpakugakko.com/minpaku-smartlock-comparison-2026/] [https://app-tatsujin.com/qrio-lock-support-end-alternatives-2026/] |
+| **SwitchBot Lock** | 스마트락(후부착) | 본체 12,000엔~, 월액 없음 | ○(API 사양 공개, DIY 연동 가능) | — | 약 99% 도어 대응 표기, 최저가대 | [https://tech-landlord.com/articles/comparing-smartlocks-recommendation-is-switchbot-api-for-diy-system/] [https://minpakugakko.com/minpaku-smartlock-comparison-2026/] |
+| **TTLock** | 스마트락(교체형, 해외 제품군) | 본체 20,000~40,000엔, 월액 없음 | **미확인**(해외 API 존재로 알려지나 스니펫 미확인) | 앱 다국어 **미확인** | 일본어 지원·운용 규모 기준 선택 | [https://minpakugakko.com/minpaku-smartlock-comparison-2026/] |
+| **SADIOT LOCK** | 스마트락(후부착) | 본체 15,000엔~ | **미확인** | — | 참고 | [https://minpakugakko.com/minpaku-smartlock-comparison-2026/] |
+| **Akerun(Photosynth)** | 스마트락(법인 오피스 중심) | **미확인** | **미확인** | — | 검색 결과에 민박 용도 정보 없음 → **미확인** | [https://www.aspicjapan.org/asu/article/2815] |
+| **셀프체크인 시스템(참고)** | 무인 프론트·본인확인 | MujInn·AdvaNceD IoT·HOTEL SMART(4,500시설)·maneKEY 등, 가격 **미확인** | 일부 스마트락 연계 | 다국어 대응 표기(maneKEY) | 민박·호텔 본인확인 ICT 요건 충족용 | [https://mujinn.com/] [https://and-iot.jp/dms/] [https://www.hotelsmart.jp/id-checkin/737/] [https://manekey.com/blog/column20241226/] |
+| **TRUSTDOCK** | eKYC(API형) | **미확인** | ○(API 연동, 관리화면·오퍼레이터·24h 시프트 불요) | 재류카드 번호 유효성·국적 온라인 확인 옵션(2021.7~), 취로 제한 확인 | 犯収法 등 다법령 대응, 도입 수 No.1 표방 | [https://biz.trustdock.io/ekyc] [https://bizly.jp/news-hiring-human-resource-210726-3/] |
+| **LIQUID eKYC** | eKYC | 초기비+월정액(계약 조건별)+종량 | ○(IC칩 읽기 채널 자동 선택 API) | 재류카드·특별영주자증명서 대응 | 국내 점유율 No.1 표방; 2024.10 DocuSign에 제공 | [https://liquidinc.asia/liquid-ekyc] [https://www.ekyc-guide.com/list/liquid.html] [https://liquidinc.asia/news/2024-10-10] |
+| **ProTech ID Checker(ショーケース)** | eKYC | "저비용", 최단 1주 도입(금액 **미확인**) | **미확인** | 면허증·마이넘버·여권·재류카드 | — | [https://www.ekyc-guide.com/list/] |
+| **在留カード等読取アプリケーション(出入国在留管理庁)** | 재류카드 IC 진위 확인 앱 | 무료 | 없음(앱 배포; 법인 API·라이선스 **미확인**) | 재류카드·특별영주자증명서 IC칩 읽어 위조·변조 확인, Win/Mac/Android/iOS; 고용계약 등 본인확인에 이용 가능(본인 동의) | PC는 확장 APDU 대응 리더 필요; 失効情報照会 병용 | [https://www.moj.go.jp/isa/applications/procedures/rcc-support.html] [https://roumu.com/archives/106059.html] |
+| **クラウドサイン(弁護士ドットコム)** | 전자계약(立会人型) | **미확인** | ○(이에라부 등 연계) | 다국어 **미확인** | 국내 점유율 1위, 電帳法 타임스탬프 표준 대응 | [https://gxo.co.jp/column/electronic-contract-cloudsign-docusign-comparison] [https://www.cloudsign.jp/integrations/ielove/] |
+| **電子印鑑GMOサイン** | 전자계약(立会人型+当事者型) | **미확인** | ○(eKYC API 연계로 본인확인~계약 온라인 완결) | **미확인** | Oakhouse 채용 [https://www.oakhouse.jp/eng/movein]; "법적 유효성 최강" 평 | [https://www.gmosign.com/lp/ekyc/] [https://it-trend.jp/electronic_contract_system/8847] |
+| **DocuSign Japan** | 전자계약(글로벌) | **미확인** | ○ | 다국어 UI(글로벌); LIQUID eKYC 탑재 | 해외 거주 계약자 친화 | [https://liquidinc.asia/news/2024-10-10] [https://hatenabase.jp/blog/cloud-sign-service-pricing-2026/] |
+| **freeeサイン(구 NINJA SIGN)** | 전자계약 | 무료 플랜 있음(2022 기준) | **미확인** | **미확인** | 소규모용 | [https://sucmof.jp/electronic-contract/] [https://hatenabase.jp/blog/cloud-sign-service-pricing-2026/] |
+| **いえらぶ電子契約 / いえらぶサイン** | 부동산 특화 전자계약(クラウドサイン 기반) | **미확인** | ○(いえらぶCLOUD 리싱·관리 데이터 상호 연계) | **미확인** | 이탄지·ESいい物件One·Musubell 등 타 시스템과도 연계 | [https://ielove-cloud.jp/service/sign/] [https://www.cloudsign.jp/integrations/ielove/] [https://kigyolog.com/service.php?id=451] |
+| **いい生活 スマート契約** | 부동산 전자계약 | **미확인** | **미확인** | **미확인** | 검색 스니펫 없음 | [https://kigyolog.com/service.php?id=451] |
+| **Musubell(ムスベル)** | 부동산 전자계약 | **미확인** | **미확인** | **미확인** | 비교 기사 게재 | [https://kigyolog.com/service.php?id=451] [https://boxil.jp/mag/a7984/] |
+| **Stripe Japan** | 결제(PSP) | 카드 3.6% 정액; 편의점 3.6%·최저 120엔 | ○ | 다통화·해외카드(수수료 차등 **미확인**) | 초기·월액 0 | [https://enhanceit.jp/stripe-tesuryo-hikaku/] [https://backoffice-log.com/konbini-kessai/] [https://stripe.com/pricing] |
+| **KOMOJU(DEGICA)** | 결제(PSP) | 카드 3.25% 정액, 초기·월액 0; 편의점 2.75% | ○ | 해외 결제 수단 **미확인** | 2026 중견기업용 4강 비교 대상 | [https://gxo.co.jp/column/payment-stripe-square-smartpay-komoju-gateway-mid-2026] [https://backoffice-log.com/konbini-kessai/] |
+| **GMO-PG(GMOペイメントゲートウェイ)** | 결제(PSP) | 카드 3.5%~ + 트랜잭션 6엔 + 매출처리 6엔, 초기·월액 있음 | ○ | **미확인** | 대기업형 | [https://xn--mnq881egoay3cv46dzoi.jp/article/company03.php] [https://www.gmo-pg.com/lpc/pgep/] |
+| **Airwallex Japan** | 결제·다통화 계좌 | 계좌 개설·유지 무료, 환율 인터뱅크+0.5~0.6%, 결제 1.2%+고정(카드 종류별) | ○ | 다통화 수취(해외 결제 특화) | Fintech협회 회원 | [https://saasmap.jp/tools/airwallex] [https://fintechjapan.org/corporate/airwallex-japan/] [https://www.airwallex.com/docs/payouts/payout-network/japan] |
+| **GTN 家賃保証** | 외국인 전문 임대보증 | 보증료 **미확인** | 웹 신청 "HONEST"(인쇄·팩스 불요, 실시간 상태); API **미확인** | 다국어 지원 무제한 무료, 보증인·일본어 불요, 연 10만건 | 보증 심사+라이프라인 개통 일원화 | [https://www.gtn.co.jp/business/realestate/rent-guarantor/agency] [https://prtimes.jp/main/html/rd/p/000000131.000054071.html] |
+| **全保連** | 임대보증(최대급) | **미확인** | 전자신청 "Z-WEB2.0"(24시간 스마트폰 입력); API **미확인** | 외국인 대응 **미확인** | テックタッチ 도입으로 전자신청 UX 개선 | [https://www.zenhoren.jp/qa/contract.html] [https://techtouch.jp/cases/zenhoren/] |
+| **Casa** | 임대보증 | **미확인** | **미확인** | **미확인** | 스니펫 없음; 외국인 대응 보증회사 15사·9언어 표 참조 | [https://f-mikata.jp/gaikokujin-hoshoukaisha/] |
+| **청소 매칭(くらしのマーケット·ミツモア 등)** | 民泊清掃 매칭 | 시간당 약 5,000엔 목표치; 물건 규모·지역별 편차 | 없음(매칭 UI) | — | 성수기 가산·교통비·리넨 포함 연간 총액으로 비교 권장 | [https://curama.jp/vacation-rental-cleaning/] [https://meetsmore.com/services/airbnb-cleaning] [https://airhost.jp/blog/vacation-rentals/vacationrental-cleaningservices] [https://bicsminpaku.com/blog/minpakuseisou/minpaku-cleaning-price-comparison-2025/] |
+| **Bebot(ビースポーク)** | 다국어 AI 컨시어지 챗 | 관광안내 사례 초기 300~500만엔·월 15~50만엔, 개별 견적 | **미확인** | 브라우저 언어로 자동 전환, 다국어 | 정부·공항 도입; 호텔용 AI 챗봇 비교 8선 참조 | [https://leapdog.co.jp/chat_cs/bebot/] [https://fama.startrise.jp/services/internet-customer-service/55] [https://www.ryokan-news.com/articles/hotel-ai-chatbot-comparison-cost-multilingual-guide] |
+
+**규제·인증 체크리스트(자동화 설계 시 전제)**
+- 宅建業法: 2022.5 개정으로 重要事項説明書·계약서 전자화 해금(공정증서 필요 유형 제외), IT重説은 통상 30분~1시간, 2026년엔 "점포 방문 0회·열쇠까지" 스타일 일반화 [https://gxo.co.jp/column/electronic-contract-cloudsign-docusign-comparison] [https://www.ari-match.com/blog/entry-748293/] [https://www.homes.co.jp/cont/rent/rent_00836/]; 전자계약은 電子署名+타임스탬프로 비변조 확인 필요 [https://cloudcontract.jp/blog/fudousan].
+- 住宅宿泊事業法(민박) 본인확인: 대면 또는 ICT(영상통화·현지 태블릿) 가능, 요건은 ①얼굴과 여권이 선명히 보일 것 ②영상 발신지가 사업소·届出住宅 또는 근방일 것; 외국인은 국적·여권번호를 숙박 개시 전 명부 기재 [https://www.hotelsmart.jp/id-checkin/737/] [https://www.yumeyumetravel.com/2022/05/31/minpaku_identification/] [https://ekyc.nexway.co.jp/blog/97] → 30박+ 임대차로 운용하면 이 요건 대신 宅建/임대차 본인확인(재류카드·여권)이 기준이 됨(법적 경계는 §3-2).
+- 정보보안 인증: ISMS(ISO27001)는 전사 정보자산 리스크 관리, プライバシーマーク는 개인정보 보호 체계 중심 [https://www.trendmicro.com/ja_jp/jp-security/25/b/expertview-20250220-01.html] [https://www.lrm.jp/security_magazine/pmark-isms/]; 프롭테크 각사의 취득 현황은 **미확인**. PCI DSS는 PSP 토큰화로 카드번호 비보유 구성 시 가맹점 준수 범위 축소(일반론, 개별 PSP 조건 **미확인**).
+
+---
+
+## 6. 직접 경쟁 판정: '온라인 완결 계약 + 셀프체크인 + 보증인 불요'를 1~6개월 외국인에게 이미 제공하는 사업자
+
+판정 기준: ①계약이 온라인(전자서명)으로 완결 ②열쇠 인도가 무인(스마트락·키박스·앱) ③보증인·보증회사 불요, ④1~6개월 외국인 대상 개인 아파트. ◎=3요건 모두 확인, △=일부 확인/일부 미확인, ✕=요건 미충족.
+
+- **◎ Weave Living Japan** — 전자서명 온라인 계약(15분)·현지통화 카드 [https://tokyocheapo.com/living/weave-living-furnished-apartments/], 셀프체크인 [https://www.weave-living.com/faq], 보증인·礼金·중개 0 [https://www.weave-living.com/blog/the-real-cost-of-living-in-tokyo]. 단 셀프체크인 후 2영업일 내 대면 ID 확인이 남고, 도쿄 1,400유닛·미나토구 고가 프리미엄.
+- **◎ Sumyca(matsuri)** — 본인확인~계약~결제~스마트락 온라인 완결 [https://www.sumyca.com/en]; 보증인 요건은 스니펫 미확인이나 민박 전환 물건 특성상 불요 추정(**미확인**). 게재 수·영어 UI 완성도·게스트 수수료 미공개로 실질 규모 판정 불가.
+- **△ Unito** — 앱 완결 계약·셀프체크인 [https://unito.life/], 2025.3 영어 [https://prtimes.jp/main/html/rd/p/000000144.000033908.html], 법인 출장 플랜 [https://business.unito.life/]. 보증인 불요·敷金 유무 **미확인**, 법인은 카드 불가, 응대·취소 후기 편차. 세그먼트 커버리지(出張者+외국인)는 가장 넓음.
+- **△ Blueground Japan** — 앱 셀프체크인·글로벌 온라인 예약 [https://www.theblueground.com/m/corporate-apartments/tokyo-jpn]; 일본 계약 형태·보증인 **미확인**, 36유닛 초기 단계.
+- **△ MetroResidences** — 스마트락 직접 체크인·온라인 인보이스 [https://info.metroresidences.com/knowledge/metroresidences-japan-faq-all-in-one]; 전자계약·보증인 **미확인**, 1개월 미만 불가·고가.
+- **△ Oakhouse** — GMOサイン 온라인 계약 [https://www.oakhouse.jp/eng/movein]·해외 신청·보증인 불요 [https://www.oakhouse.jp/eng/apartment]; 셀프체크인 **미확인**, 개인 아파트 소수(셰어 중심).
+- **△ 레오파레스21 먼슬리** — 선불로 보증인 불요·5개 언어·법인 電子領収証; 전자계약·셀프체크인 **미확인**, 먼슬리 억제 방침.
+- **✕ Sakura House** — 온라인 예약·결제는 가능하나 계약 서명·열쇠는 신주쿠 라운지 대면 [https://www.sakura-house.com/about/rent].
+- **✕ 東急ステイ / Section L / MIMARU** — Section L은 태블릿 셀프체크인 [https://section-l.co/hello-asakusa-east/]이나 숙박(계약·주소지 없음); 東急ステイ는 유인 프론트.
+- **✕ Wagaya / GaijinPot / Best-Estate / 한인 부동산** — 온라인 상담·내견까지, 서명·열쇠는 입국 후 대면 [https://wagaya-japan.com/jp/online.php]; 보증회사 통상 필요.
+- **(대체재) Airbnb 30박+** — 온라인·셀프체크인·보증인 불요를 사실상 충족하나 임대차 계약서·주소지 없음, 민박 180일 산입 [https://note.com/beds24japan/n/nead72ec68393].
+- **미판정** 홈즈재팬(한국어 원격 계약 가능, 열쇠 인도·보증 **미확인**).
+
+**결론(2~3줄)**: 3요건을 외국인 1~6개월 개인 아파트에 이미 제공하는 사업자는 Weave Living(프리미엄·1,400유닛)과 Sumyca(기능은 갖췄으나 규모 불명) 2곳이며, Unito·Blueground·MetroResidences·Oakhouse는 1~2요건이 미확인인 준(準)경쟁자다. 중가 원룸(월 7~15만엔)·주 단위·소액 고정 보증금·出張者 請求書払い와 欧米豪 영어 온라인 완결을 한 스택으로 자동화한 33m2형 사업자는 검색상 존재하지 않으며, 현실적 최근접 경쟁자는 Unito(세그먼트 폭)와 Weave(자동화 완성도)로 본다.
+
+---
+
 ## 시사점
 일본에는 "외국인·1주~6개월·개인 아파트·온라인 완결·소액 고정 보증금"을 동시에 제공하는 사업자가 없고, 33m2형 C2C의 부재는 수요 부족이 아니라 ①1개월 미만=여관업/민박, ②플랫폼 수수료의 宅建業법 포지션, ③전대 금지·보증회사 관행, ④개인 가구付き 재고 희소라는 구조 장벽 때문이므로, 진입 시 "30박+ 정기차가/一時使用 계약 + 민박 届出 호스트의 30박+ 전환 재고 + 운영사(자사) 직접계약 구조"로 법적 포지션을 먼저 확정해야 한다.
 
@@ -197,3 +292,6 @@
 - GTN 매출·보증료율, Wagaya Japan 매물 수, Social Apartment·XROSS HOUSE 외국인 비율, Borderless House 실 수
 - 홈즈재팬 실 수·요금, 엔코 일본 진출 형태(직영/제휴)·시점, 리브애니웨어·미스터멘션 일본 매물 수, 야놀자·여기어때 일본 장기숙박
 - 33m2형 수수료 구조의 宅建業法 적법성(시스템 이용료 vs 중개보수), 개인 호스트 해외카드 정산 규제, 먼슬리 시장 총규모 공식 통계
+- (§4) 레오파레스·Oakhouse·Weave·Unito·Blueground의 전자계약·스마트락·eKYC 벤더명, 각사 인력 비율, 中国語 번체 UI 유무, 해외카드·분할 결제 가부
+- (§4) Unito 개인 카드 결제 가부·보증인 요건, Sumyca 보증인 요건·게재 수, Blueground Japan·MetroResidences 일본 법인 請求書払い·계약 형태, 東急ステイ레지던스 계약·셀프체크인 방식, 홈즈재팬 열쇠 인도·보증 방식
+- (§5) Beds24·AirHost·TL-リンカーン·Akerun·TTLock·いい生活 スマート契約·Musubell·Casa 가격 및 API 공개 여부, TRUSTDOCK·ProTech ID Checker·クラウドサイン·GMOサイン 요금, 在留カード等読取アプリケーション 법인 API·라이선스, Stripe/KOMOJU 해외발행카드 수수료 차등, GTN·全保連 보증 API, 각 프롭테크의 ISMS/Pマーク 취득 현황
