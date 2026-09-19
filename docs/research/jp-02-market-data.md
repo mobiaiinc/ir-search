@@ -297,6 +297,170 @@
 - 단가 14万/12万은 2026 東京 賃料 +13% YoY 추세 반영 시 상향, 셰어하우스 비중 확대 시 하향.
 - 환율 884원/100円: 2026.4 대비 −3%; 원화 환산치는 ±5% 변동.
 
+### 9-6. 확장 TAM — 국내 出張者(F)·인바운드 Japan-fan(G) 세그먼트 추가
+
+| 세그먼트 | 가정 | 인원·泊/년 | 평균 계약 개월 | person-month |
+|---|---|---|---|---|
+| F-東京. 지방발 長期出張·単身赴任·研修 (1주~3개월) | 出張市場 宿泊費 3,331億円 [DBJ](https://www.dbj.jp/topics/region/industry/files/0000029022_file2.pdf) ÷ ビジネスホテル 단가 13,930円 [税理士ドットコム](https://www.zeiri4.com/c_1032/n_1209/) ≈ 전국 약 2,400万泊 → 東京 30% = 720万泊 × 1주 이상 長期·マンスリー 적합 15%(가정) = 108万泊 | 108万泊 | — (泊÷30) | 36,000 |
+| F-大阪. 동일 | 전국 2,400万泊 × 大阪 12% = 288万泊 × 15% = 43.2万泊 | 43.2万泊 | — | 14,400 |
+| G-東京. 欧米豪 Japan-fan 30일+ 체류 (E 세그먼트 초과분) | 2025 訪日 米 330.7万+豪 105.8万+加 60.0万+仏 42.3万+独 38.9万 ≈ 577.7万 × 東京 방문 60% × **30일+ 비율 1.5%(가정, E의 0.5% 초과분 1.0%만 가산)** | 34,700 | 1.5 | 52,000 |
+| G-大阪. 동일 | 577.7万 × 大阪 방문 35% × 1.0% | 20,200 | 1.5 | 30,300 |
+| 台湾 Japan-fan | 台湾 676.3万은 리피터 95%이나 평균 泊数 짧아 30일+ 비율 0.3% 가정 → E(0.5%)에 이미 포함, 가산 없음 | — | — | 0 |
+
+- 단가: F 東京 15万円·大阪 12万円(法人 マンスリー 시세), G 東京 16万円·大阪 13万円(Airbnb monthly 시세 반영, 관광 30일+는 고단가) [atinn](https://atinn.jp/information/tokyo-monthly-mansion-price/) · [AirROI](https://www.airroi.com/airbnb-data/japan/tokyo/tokyo)
+- **확장 TAM(東京23区) = 417 + F 54 + G 83 ≈ 554億円 ≈ 4,900억 원** (p-m 385,600)
+- **확장 TAM(大阪市) = 179 + F 17 + G 39 ≈ 235億円 ≈ 2,080억 원** (p-m 193,700)
+- **확장 합산 TAM ≈ 789億円 ≈ 6,980억 원 / SAM(35%) ≈ 276億円 ≈ 2,440억 원**; take rate 13.2% 적용 수수료 잠재치 ≈ 36.4億円 ≈ 322억 원/년
+- 민감도: F의 「長期 적합 15%」는 長期出張 실태 통계 부재로 ±100%; G의 30일+ 1.5%는 独 18.0泊·仏 18.4泊의 長期 꼬리 분포에서 추정한 값이라 ±60%. 出張시장 자체는 2015→2025 −9%·2030 2.78兆円 축소 전망 [DBJ](https://www.dbj.jp/topics/region/industry/files/0000029022_file2.pdf)이나 宿泊費 高騰이 マンスリー 전환을 촉진.
+
+---
+
+## 10. 국내 出張者 세그먼트 (地方→東京·大阪 長期出張·単身赴任·研修)
+
+### 10-1. 出張·業務 여행 시장 규모
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 日本人 国内旅行消費額 2025 | 26兆7,845億円 (+6.5%), 宿泊旅行 21兆7,211億円 (+6.8%), 延べ旅行者 +2.4% | 2025 확보 | [観光庁 2025 年間値(確報)](https://www.mlit.go.jp/kankocho/topics02_00028.html) · [トラベルボイス](https://www.travelvoice.jp/20260430-159734) |
+| 国内宿泊旅行 목적별 소비 | 観光・レク 13.6兆 · 帰省・知人訪問 3.6兆 · **出張・業務 3.1兆円 (15.1%)** | — | [DBJ 出張マーケット](https://www.dbj.jp/topics/region/industry/files/0000029022_file2.pdf) |
+| 出張市場 규모 추이 | 2015 3兆2,922億 → 2020 3兆1,861億 → **2025 3兆44億** → 2030 2兆7,821億(예측); 30년간 −15% | 2018 추정 | [DBJ](https://www.dbj.jp/topics/region/industry/files/0000029022_file2.pdf) · [トラベルボイス](https://www.travelvoice.jp/20180213-104545) |
+| 出張市場 내역 | 移動 1兆4,527億 · **宿泊費 3,331億** · パック·団体 2,083億 | — | [DBJ](https://www.dbj.jp/topics/region/industry/files/0000029022_file2.pdf) |
+| 出張·業務 목적 国内宿泊 人数·泊数 2025 | **미확인** (観光庁 消費動向調査 목적별 표 원문 필요) | — | [観光庁 消費動向調査](https://www.mlit.go.jp/kankocho/tokei_hakusyo/shohidoko.html) |
+| 「観光目的50%未満」 시설 비중 | **미확인** (宿泊旅行統計 시설유형별 稼働率만 확인: ビジネスホテル 75.3% · シティ 74.2% · 旅館 38.4%) | 2025 | [トラベルボイス](https://www.travelvoice.jp/20260302-159329) |
+| 主要旅行業者 業務 부문 취급액 | 원문 표 **미확인** | 2025 | [JATA 部門別取扱額](https://www.jata-net.or.jp/databank/jata-trend/page-66593/2025_17/) |
+
+### 10-2. 長期出張·単身赴任·研修 volume
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 単身赴任 비율 (男性 雇用者) | 1.4%(1987) → 2.5%(2012) → **3.0%(2017)**; 1992 男性 単身赴任者 약 48万 | 2017 | [JILPT 指標](https://www.jil.go.jp/kokunai/statistics/kako/2022/documents/useful2022_06_p48-51.pdf) · [JILPT 資料 No.179](https://www.jil.go.jp/institute/siryo/2016/documents/0179_01.pdf) |
+| 単身赴任者 2022 (令和4年 就業構造基本調査) | **미확인** (e-stat 표 직접 조회 필요) | 2022 | [総務省 就業構造基本調査 2022](https://www.stat.go.jp/data/shugyou/2022/index.html) |
+| 長期出張(1개월+) 실태·건수 | **미확인** (旅行会社·マンスリー 사업자 조사 검색 미노출) | — | — |
+| 法人 이용 용도 | 長期出張 숙소·研修 거점·短期 単身赴任·借上社宅; 회계는 旅費交通費 처리 | — | [マイナビBiz](https://biz.mynavi.jp/contents/what-is-monthly-apartment) · [MetroResidences](https://www.metroresidences.com/jp/expat-life/business-trip-expense/) |
+| 直近 3년 국내 出張 宿泊料 増額 기업 | **31.1%** | 2025–26 | [STELLAR clip](https://stellarforce.com/blog/%E3%80%902025%E5%B9%B4%E6%94%B9%E6%AD%A3%E3%80%91%E5%87%BA%E5%BC%B5%E3%81%AE%E5%AE%BF%E6%B3%8A%E8%B2%BB%E3%80%8C%E5%AE%9F%E8%B2%BB%E3%83%BB%E4%B8%8A%E9%99%90%E3%81%A4%E3%81%8D%E3%80%8D%E3%81%B8/) |
+
+### 10-3. マンスリー 法人 비중·계약기간
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| レオパレス21 입주자 구성 | **法人 64.6%** / 個人 28.8% / 学生 6.6%; 社宅·短中期 이용 강점, FY2026/3 純利益 +1% (社宅 수요) | 2025.3 | [レオパレス 会社概要](https://www.leopalace21.co.jp/ir/library/invbriefing/pdf/company_information_2025_002_03.pdf) · [日経](https://www.nikkei.com/article/DGXZQOUC09AJV0Z00C25A5000000/) |
+| グッドマンスリー·W&M 法人 비율·목적별 | **미확인** | — | [W&M 出張](https://weeklyandmonthly.com/journal/post-8851/) |
+| 出張 이용 マンスリー 평균 계약기간 | **미확인**; 최저 1개월 계약 후 日 단위 연장 가능 구조 | — | [JTB 法人](https://www.jtbbwt.com/business/trend/detail/id=2990) · [atinn](https://atinn.jp/information/hotel-prices-soaring/) |
+| 法人 マンスリー 월 비용 | 東京 長期出張·研修용 20㎡+ 물건 월 15~18万円 (ビジネスホテル 대비 저렴) | 2025 | [W&M ジャーナル](https://weeklyandmonthly.com/journal/post-8851/) |
+
+### 10-4. 東京·大阪 ホテル ADR vs マンスリー 손익분기
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| ビジネスホテル 客室単価 | 2021/3期 6,180円 → **2025/3期 13,930円 (약 2.3배)** | 2025.3 | [税理士ドットコム](https://www.zeiri4.com/c_1032/n_1209/) |
+| 東京都 호텔 평균 ADR | **¥17,147** (2026.7, 전국 평균 ¥14,860) | 2026.7 | [HotelBank 2026](https://hotelbank.jp/trends/business-hotel-adr-2026-cost-performance/) |
+| 東京都 ビジネスホテル ADR | 직근 12개월 평균 ¥14,300 (+6.3%); YoY 2025.10 +15.0% 정점 → **2026.6 −4.7%로 전환**; 都心5区 vs 주변18区 30% 격차 | 2026.6 | [HotelBank 都心5区](https://hotelbank.jp/trends/tokyo-business-hotel-adr-central5-vs-outer-wards-2026/) |
+| 大阪 万博 후 | 2026.4 稼働 80%대 高止まり·前年比 횡보~감소; 2025 4–6월 ADR +3~4割 (부록 §3 참조) | 2026 | [HotelBank](https://hotelbank.jp/industry-trends/torikireru-yado-capacity-ceiling-2026/) · [日経](https://www.nikkei.com/article/DGXZQOUF062ID0W5A600C2000000/) |
+| 손익분기 泊数 (계산) | 東京 マンスリー 15万円/月 ÷ 東京 호텔 ADR 17,147円 ≈ **8.7泊** → 9泊 이상 체류 시 マンスリー가 저렴 (12万円 물건이면 7泊); 大阪 12万 ÷ 1.3万(공무원 상한) ≈ 9.2泊 | 2026 | 산식: [atinn](https://atinn.jp/information/tokyo-monthly-mansion-price/) · [HotelBank](https://hotelbank.jp/trends/business-hotel-adr-2026-cost-performance/) |
+| 2026 訪日 −2.7% 영향 | 東京 ADR 상승세 둔화 → 손익분기 泊数는 소폭 상승(마ンスリー 우위 약화) | 2026 | [HotelBank](https://hotelbank.jp/trends/tokyo-business-hotel-adr-central5-vs-outer-wards-2026/) |
+
+### 10-5. 旅費規程·宿泊費 상한
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 国家公務員 旅費法 개정 | **2025.4.1 시행**, 1950년 제정 후 75년 만의 첫 근본 개정; 宿泊料 정액 → **実費(도도부현별 상한)**: 東京 19,000円 · 大阪 13,000円 · 福岡 18,000円; 日当 폐지 → 宿泊手当 | 2025.4 | [バクラク](https://bakuraku.jp/knowledge/knowledge-card/2025-travel-expense-law/) · [アスクル](https://www.askul.co.jp/f/special/product_column/actontravelexpenses/) · [官公庁会計実務](https://kaikei.mynsworld.com/travel-expenses-law-changes/) |
+| 民間 대응 | 도시별 상한 재설정(東京·大阪 인상), 2026년에 걸쳐 「上限付き実費」 개정 본격화; 상한 내 예약 불가가 常態化 | 2025–26 | [ピカパカ](https://btm.pikapaka.co.jp/btm_column/formanager/business-trip-accommodation-limit/) · [STELLAR clip](https://stellarforce.com/blog/%E3%80%902025%E5%B9%B4%E6%94%B9%E6%AD%A3%E3%80%91%E5%87%BA%E5%BC%B5%E3%81%AE%E5%AE%BF%E6%B3%8A%E8%B2%BB%E3%80%8C%E5%AE%9F%E8%B2%BB%E3%83%BB%E4%B8%8A%E9%99%90%E3%81%A4%E3%81%8D%E3%80%8D%E3%81%B8/) |
+| 民間 평균 宿泊費 상한 (産労総研 등) | **미확인** (역직별 상장 참고: [手配プラス 2026](https://www.tehaiplus.com/media/contents/accommodation-fee)) | — | — |
+| 宿泊費 高騰 → マンスリー 전환 보도 | 「ホテル高騰の今こそマンスリー」·JTB 法人 「国内宿泊単価高騰 대책」·社労士 해설 등 다수 | 2025–26 | [atinn](https://atinn.jp/information/hotel-prices-soaring/) · [JTB 法人](https://www.jtbbwt.com/business/trend/detail/id=2990) · [ジオフィス](https://shiga-office.com/archives/3764) |
+
+**시사점**: 出張 宿泊費 시장은 연 3,331億円 규모로 축소 추세지만, **ビジネスホテル 단가가 4년간 2.3배(6,180→13,930円)·東京 ADR 1.7万円**으로 뛰면서 공무원 상한 1.9万·민간 상한 초과가 常態化 → **9泊 이상 체류부터 マンスリー가 호텔보다 싸지는 구조**가 2025.4 旅費法 実費化와 맞물려 法人 中期 수요를 밀어올림. 단 レオパレス 法人 64.6%가 보여주듯 이 세그먼트는 **法人 청구서·領収書·회계 처리(旅費交通費)**를 요구하므로 B2B 결제·인보이스 기능이 진입 조건. 長期出張 건수 통계는 부재(미확인).
+
+---
+
+## 11. 인바운드 "Japan fan" 장기체류 세그먼트 (北米·欧州·豪州·台湾)
+
+### 11-1. 국가별 訪日客 2025·2026 YTD
+
+| 국가 | 2025 연간 | YoY | 2026.8 단월 | 출처 |
+|---|---|---|---|---|
+| 台湾 | 6,763,400 | 최다 갱신 | 666,000 (+7.3%) | [やまとごころ](https://yamatogokoro.jp/inbound_data/59128/) · [旅行新聞](https://www.ryoko-net.co.jp/?p=173099) |
+| 米国 | **3,306,800** (JNTO) / 299.9万 (+21%, JTB総研 표기 — 재검증) | — | 197,400 (+1.5%) | [やまとごころ](https://yamatogokoro.jp/inbound_data/59128/) · [JTB総研](https://www.tourism.jp/tourism-database/stats/inbound/) |
+| 香港 | 2,517,300 | — | 247,300 (+9.4%) | 동상 |
+| 豪州 | **1,058,300 (첫 100万 돌파, 7번째 100万 시장)** / 93.5万 (+14%, JTB総研 — 재검증) | — | 8월 최다 | [やまとごころ](https://yamatogokoro.jp/inbound_data/59128/) · [JTB総研](https://www.tourism.jp/tourism-database/stats/inbound/) |
+| カナダ | 약 60.0万 (+21%) | — | 8월 최다 | [JTB総研](https://www.tourism.jp/tourism-database/stats/inbound/) |
+| フランス | 약 42.3万 (+17%) | — | 8월 최다 | 동상 |
+| ドイツ | 약 38.9万 (+30%) | — | 8월 최다 | 동상 |
+| 英国·イタリア·スペイン | 연간 수치 **미확인**; 소비액 英 2,076億·伊 1,096億·西 888億 | 2025 | [観光庁 確報 PDF](https://www.mlit.go.jp/kankocho/content/001992584.pdf) |
+| 2026 1–8월 | 누계 27,626,300 (−2.7%); 伊·西 단월 최다, **14시장 8월 최다**; 국가별 누계 **미확인** | 2026.8 | [やまとごころ](https://yamatogokoro.jp/inbound_data/61261) · [JNTO 8월](https://www.jnto.go.jp/news/press/20260916_montly.html) |
+| 2025 최다 갱신 시장 | 20시장; 12월 최다: 台湾·越·印·豪·米·加·墨·英·仏·独·伊·西 | 2025 | [やまとごころ](https://yamatogokoro.jp/inbound_data/59128/) |
+| 2026 JTB 전망 | 訪日 4,140万으로 감소, 고단가층 지방 시프트 | 2026 | [やまとごころ JTB](https://yamatogokoro.jp/inboundnews/pickup/59018/) |
+
+### 11-2. 국적별 泊数·支出·리피터
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 平均泊数 (전체) | 9.5泊; **ドイツ 18.0泊 · フランス 18.4泊**; 韓国 4.0泊 | 2025 | [やまとごころ](https://yamatogokoro.jp/inbound_data/59160/) · [inbound-lab](https://inbound-lab.com/news/southkorea-spending-trends-2025/) |
+| 米·英·豪·台湾 泊数 | **미확인** (年次報告書 원문 필요) | — | [観光庁 2025 年次報告書](https://www.mlit.go.jp/kankocho/content/002003329.pdf) |
+| 1인당 支出 상위 | **ドイツ 39.4万 · 英国 39.0万 · 豪州 39.0万円** (전체 22.9万); 費目: 宿泊 8.4万·買物 6.1万·飲食 5.0万 | 2025 | [やまとごころ](https://yamatogokoro.jp/inbound_data/59160/) |
+| 滞在 31日以上 비율 (국적별) | **미확인** | — | — |
+| 리피터율 | **香港 95.5% · 台湾 95.0% · 中国 89.7%**; 5회+ 하드리피터 香港 71.5%; 米国 初訪 약 60%; 韓国 리피터 약 80% | 2025 | [九州観光機構 2025 조사](https://report.welcomekyushu.jp/member/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E8%A8%AA%E6%97%A5%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%A6%B3%E5%85%89%E5%AE%A2%E3%83%AA%E3%83%94%E3%83%BC%E3%82%BF%E3%83%BC%E7%8E%87%E8%AA%BF%E6%9F%BB%E7%B5%90%E6%9E%9C%E5%A0%B1%E5%91%8A%EF%BC%88%E5%85%AC%E9%96%8B%E7%94%A8%EF%BC%89.pdf) · [アウン 2025](https://prtimes.jp/main/html/rd/p/000000229.000034654.html) |
+| 高付加価値旅行者 | 訪日客의 약 2%(약 59万)가 소비의 약 19%(약 1兆円); 대부분 大都市圏 | 2023 | [観光庁 高付加価値](https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/inbound_kaifuku/kofukakachi.html) · [JTBF 컬럼](https://www.jtb.or.jp/researchers/column/column-high-value-traveler-policies-kakishima/) |
+
+### 11-3. 노마드 비자 국적·환율·정책
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| デジタルノマド 국적별 (2025) | **米国 240 · 豪州 114 · カナダ 46 · ドイツ 39 · フランス 29 · 英国 28** (상위 5개국 72.4%, 北米·豪·英 68%) — 총 646 | 2025 | [日本デジタルノマド協会 PR](https://prtimes.jp/main/html/rd/p/000000024.000126832.html) |
+| 제도 | 약 50개국, 연수입 1,000万円+, 6개월 이내, 배우자·자녀 동반 가 | 2024.4~ | [トラベルボイス](https://www.travelvoice.jp/20240401-155403) · [入管庁](https://www.moj.go.jp/isa/applications/status/designatedactivities10_00001.html) |
+| 円安 효과 정량 | **미확인** (2024–26 ドル円과 訪日消費 상관 데이터 검색 미노출); 欧米豪 長期·高消費층 증가가 소비액 증가 요인 | — | [観光庁 2026 白書 요약](https://www.travelvoice.jp/20260710-160152) |
+| 長期滞在 정책 | 観光圏 有識者会議: 「2泊3日以上 滞在促進」(2026); 観光庁 2026년도 예산 1,383億円(2.4배, 国際観光旅客税 3,000円 재원); 외국인 숙박 7割 三大都市圏 집중 → 지방 분산 | 2026 | [観光庁 観光圏](https://www.mlit.go.jp/kankocho/topics04_00076.html) · [トラベルボイス 白書](https://www.travelvoice.jp/20260710-160152) · [kagonma](https://kagonma-info.com/column/japan-tourism-industry-20260119/) |
+| ワーケーション 유치 정량 | **미확인** | — | — |
+
+### 11-4. 欧米豪 숙박 형태·民泊 이용률
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 訪日客 民泊 이용률 (전체) | 12.4% (관광객 14.9%) | 観光庁 조사 | [Airstair 観光庁](https://airstair.jp/kankocho-minpaku/) · [観光経済新聞](https://www.kankokeizai.com/%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%A6%B3%E5%85%89%E5%AE%A2%E3%80%81%E6%B0%91%E6%B3%8A%E5%88%A9%E7%94%A8%EF%BC%97%E4%BA%BA%E3%81%AB%EF%BC%91%E4%BA%BA/) |
+| 국적별 民泊 이용률 (관광객) | **シンガポール 39.5% · フランス 35.9% · インドネシア 29.7% · 豪州 27.9% · カナダ 27.2% · スペイン 27.0% · 米国 20.2%** vs 韓国 15.1% · 香港 14.5% · 中国 14.3% · 台湾 12.6% | 観光庁 조사 | [Airstair](https://airstair.jp/kankocho-minpaku/) |
+| 이용자 특성 | 20대 이하·가족/친구 동행·LCC 이용 多 | — | [dentsu-ho](https://dentsu-ho.com/en/articles/6157) |
+| 숙박 선호 | Economy Hotel=아시아, 旅館=欧州, First-Class=北米 | — | [WASIMIL](https://www.wasimil.com/blog/stay-trends-of-foreign-visitors-to-japan-by-accommodation-type) |
+| 조사 시점 주의 | 위 国籍別 民泊 이용률은 観光庁 초기 공표치(연도 스니펫 미표기) → 2025 최신치 **미확인** | — | — |
+
+**시사점**: **欧米豪는 泊数(独·仏 18泊)·支出(39万円)·民泊 이용률(仏 36%, 豪 28%, 加 27%)이 모두 아시아의 2~3배**로, 1개월+ furnished 수요의 밀도가 가장 높은 층. 노마드 비자 646건 중 米·豪·加·英이 66%를 차지해 "영어권 Japan fan"이 핵심 페르소나. 台湾·香港은 리피터 95%이나 단기 반복형이라 中期보다 재방문 시 「同じ部屋」 리텐션 전략이 적합. 2026 訪日 총량은 감소 중이나 欧米 14시장은 8월 최다 → **국적 믹스 변화가 오히려 長期 세그먼트에 유리**.
+
+---
+
+## 12. 자동화 벤치마크 (民泊·賃貸 운영)
+
+### 12-1. 民泊 運用コスト
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 清掃 단가 | 시간당 약 5,000円 기준; 1R~1K 1회 **약 5,000~8,000円대** (넓이·업무범위별 상장 표) | 2025–26 | [くらしのマーケット](https://curama.jp/vacation-rental-cleaning/magazine/2524/) · [民泊総合研究所 清掃](https://minpaku.algoren.co.jp/minpaku-cleaning-agency/) · [bics 2025](https://bicsminpaku.com/blog/minpakuseisou/minpaku-cleaning-price-comparison-2025/) |
+| 運営代行 手数料 | **완전 대행 売上의 15~30%** (収益連動형 15~25%), 부분 대행 월 1~2万円, 고정형 월 5~10万円 | 2026 | [tabilmo](https://tabilmo.com/tips/minpaku-agency/) · [bics 料金モデル](https://bicsminpaku.com/blog/minpakudaikou/minpaku-pricing-fee-negotiation/) · [Stay&](https://stayand.co.jp/column/minpaku-management-services-cost/) |
+| リネン | 객실당 월 4,000~12,000円; 稼働 70%·월 20회 교환 시 14~18万円/월(대형 물건 기준) | 2025 | [プレイズ](https://www.plays-inc.jp/post-5639) · [bics リネン](https://bicsminpaku.com/blog/linen-rental/linen-rental-annual-cost-comparison/) |
+| 稼働率·손익분기 | 平均 稼働 30~50% 현실치, 수익 최적 70~85%; 손익분기 = 월 고정비 ÷ 1泊 手取り (예: 27万 ÷ 3.4万 ≈ 8泊, 稼働 27%) | 2025–26 | [stayexit](https://stayexit.com/hp/katsudoritsu/) · [TOCORO.](https://tocoro.co.jp/column/420/) · [garage.blog](https://garage.blog.jp/archives/1081196566.html) |
+| 中期(30일+) 전환 시 비용 구조 | 청소·리넨 회전이 월 1회로 감소 → 民泊 대비 변동비 대폭 절감 (정량 **미확인**) | — | [Livhub 하이브리드](https://livhub.jp/knowhow/manage/minpaku-monthly.html) |
+
+### 12-2. 無人運営·セルフチェックイン·スマートロック
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| セルフチェックイン 도입률 / 無人運営 비율 | **미확인** (업계 통계 부재; 住宅宿泊事業法상 영상 본인확인으로 무인 합법 운영 가능) | — | [minpakuIN](https://renoful.jp/minpakuin/) · [tabilmo](https://tabilmo.com/tips/minpaku-selfcheckin/) |
+| 無人ホテル 사례 | 30실 규모 民泊 시설: 무인 체크인+영상 오퍼레이터 본인확인으로 인건비 절감(정량 **미확인**); HOTEL SMART 4,500시설 도입 | 2025–26 | [HOTEL SMART 無人](https://www.hotelsmart.jp/unmanned-hotel/388/) · [aipass](https://aipass.jp/column/unmanned-operation/) |
+| スマートロック 일본 시장 | **2025 US$4.51億 → 2030 US$6.59億 (CAGR 7.87%)** | 2025 | [GII/IMARC 日本](https://www.gii.co.jp/report/imarc1922653-japan-smart-lock-market-report-by-lock-type.html) |
+| 글로벌 시장 | 2025 US$29.8億 → 2026 US$34.3億 (CAGR 15.3%) | 2025–26 | [GII](https://www.gii.co.jp/report/moi1940582-smart-lock-market-share-analysis-industry-trends.html) |
+| 일본 보급률 | **1.2%** (가정 전반); 신축·法人契約·短期賃貸 물건에서 도입 선행 | 2025 | [東洋経済](https://toyokeizai.net/articles/-/862397?display=b) · [日本情報クリエイト](https://www.n-create.co.jp/pr/column/tenant_owner/column-management-smart-lock-penetration/) |
+| 제품 | RemoteLOCK(Wi-Fi·Airbnb 공식 연동, 기간 한정 PIN 자동 발급) · KEYVOX(PIN·QR) · SwitchBot(賃貸 후부착, 수만엔대) | 2026 | [HOTEL SMART 비교](https://www.hotelsmart.jp/smartlock/799/) · [tabilmo](https://tabilmo.com/tips/minpaku-smartlock/) · [SwitchBot](https://www.switchbot.jp/blogs/ranking/smart-lock-top9) |
+| 가격 추이 | 과거 10万円+ → 수만엔대로 하락, 개인 오너 도입 용이 | 2026 | [tabilmo](https://tabilmo.com/tips/minpaku-selfcheckin/) |
+
+### 12-3. 賃貸 電子契約·IT重説
+
+| 항목 | 수치 | 시점 | 출처 |
+|---|---|---|---|
+| 電子契約 도입률 (부동산회사) | **2024 약 18.74%**; 2023 30인+ 기업 23.5% vs 1~4인 5% 미만 | 2024 | [LIFULL Business 2024 繁忙期](https://biz.homes.jp/column/topics-00103) · [日本情報クリエイト](https://www.n-create.co.jp/pr/column/it-hojo/real-estate-tech-trends-2025/) |
+| IT重説 실시율 | 2022 10% 미만 → **2024 30~40%가 최빈**, 계약의 50% 이상을 IT重説로 하는 회사가 과반 | 2024 | [日本情報クリエイト IT重説](https://www.n-create.co.jp/pr/column/application_contract/it-jusetsu-susume/) |
+| 효과 | 2025 이용자 조사: コスト削減 35.6%·業務削減 34.4%, 印紙税 불요 30.6%; 종이 수일~1주 → 수시간 완료, 취소율 저하 | 2025–26 | [ハウスコムFC](https://housecom-fc.jp/20260217-1/) · [マネーフォワード](https://biz.moneyforward.com/contract/basic/8740/) |
+| 법적 근거 | 2022.5 宅建業法 개정으로 賃貸借 전면 電子化 가능; 国交省 電子契約 매뉴얼 2024 개정 | 2022–24 | [PICKFORM](https://pick-hp.com/media/column/additional_manual2024) · [シヤチハタ](https://dstmp.shachihata.co.jp/column/25060601/) |
+| 절감 금액·시간 정량(국교성 공식) | **미확인** | — | — |
+
+**시사점**: 일본 民泊는 **대행 수수료 15~30%·청소 5~8천円/회·리넨 월 4천~1.2万円**의 고정 운영비 구조라 30일+ 中期로 전환하면 회전 비용이 월 1회로 줄어 플랫폼 자동화의 한계효용이 큼. 반면 **스마트록 보급률 1.2%·電子契約 18.7%·IT重説 30~40%**로 賃貸 측 디지털화는 아직 초기 → 삼삼엠투식 「완전 온라인 계약 + 스마트록 PIN 자동 발급 + 영상 본인확인」이 그대로 차별화 포인트. 무인 운영은 住宅宿泊事業法상 영상 본인확인이 요건이므로 security-critical 설계(재류카드·여권 OCR, 라이브 확인)가 법적 필수.
+
 ---
 
 ## 핵심 미확인 항목
@@ -310,3 +474,6 @@
 7. 法務省 2022 外国人住民調査 주거 항목 수치 · 東京都 在住外国人 조사(2023–25) 주거 문항 원문 · 民泊 又貸し 트러블 건수.
 8. 万博 후 大阪 신규 객실 총량(2026) · 永住許可 취소 요건 확정 내용 · 観光庁 2026.6 民泊 통지 원문.
 9. 日本語学校 短期コース 수강자 수(B 세그먼트) — TAM 민감도 최대 항목 중 하나.
+10. 出張·業務 목적 国内宿泊 人数·泊数(観光庁 消費動向調査 목적별 표) · 「観光目的50%未満」 시설 비중 · 長期出張(1개월+) 건수 · 単身赴任者 2022 수치 · マンスリー 法人 비중·평균 계약기간(グッドマンスリー/W&M) · 民間 宿泊費 상한 평균(産労総研).
+11. 訪日 2025 英·伊·西 연간 인원 · 米·英·豪·台湾 平均泊数 · 국적별 31日以上 비율 · 2026 1–8월 국가별 누계 · 円安-訪日消費 정량 · 国籍別 民泊 이용률 최신치 · JNTO(330.7万) vs JTB総研(299.9万) 米国 수치 불일치.
+12. セルフチェックイン 도입률·無人運営 비율 · 無人화 인건비 절감 정량 · 中期 전환 시 운영비 절감 정량 · 電子契約 시간·비용 절감 국교성 공식치.
