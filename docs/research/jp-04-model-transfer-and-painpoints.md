@@ -219,7 +219,116 @@
 
 ---
 
+## TASK E. 추가 세그먼트: 일본인 出張者·구미호주/대만 장기체류자·보안 기대
+
+> 추가 조사일 2026-09-19, WebSearch 24회(일·영·번체중). Reddit·Dcard·PTT·X 본문은 프록시 차단으로 스니펫만 확인. 스니펫에 없는 수치·인용은 **미확인**.
+
+### E-1. 일본인 出張者·単身赴任의 マンスリー/호텔 페인포인트
+
+#### E-1-1. 호텔비 고등 vs 출장비 규정 상한(정량)
+
+| 항목 | 수치 | 출처 |
+|---|---|---|
+| 産労総合研究所 「2025年度 国内・海外出張旅費に関する調査」 — 국내 출장 宿泊料(定額支給, 전 지역 일률) | 部長クラス 10,425円 / 一般社員 **8,878円**; 지역별 차등제의 最高地(대도시권) 部長 12,094円 / 一般 11,262円 | [https://www.sanro.co.jp/news/n118144.html] |
+| 同 조사 — 実費支給의 상한 | 전 지역 일률 部長 11,314円 / 一般 10,490円; 最高地 部長 13,695円 / 一般 12,889円 | [https://www.sanro.co.jp/news/n118144.html] |
+| 同 조사 — 최근 3년 내 국내 宿泊料 증액 기업 | **31.1%** | [https://www.sanro.co.jp/news/n118144.html] |
+| 도쿄 비즈니스호텔 실세 ADR(2025.12 시점) | 평균 객실단가 **14,500~16,000円**, 2019년比 약 1.5배, 코로나 최저가比 3배 이상 | [https://border.co.jp/article/travel-cost/hotel-price-world/] |
+| 국가공무원 여비 개정(2025.4) | 定額→実費(상한제)로 변경, 課長級 도쿄 출장 상한 19,000円 | [https://www.zeiri4.com/c_1032/n_1209/] [https://stellarforce.com/blog/【2025年改正】出張の宿泊費「実費・上限つき」へ/] |
+| マンスリー 대체 시 비용 시산(업계 블로그) | 도내 1K 일할 8,000~10,000円 가정 시 30박 약 24~30만 엔 vs 호텔 약 42만 엔 | [https://stellarforce.com/blog/【2025年改正】出張の宿泊費「実費・上限つき」へ/] |
+
+- 갭: 一般社員 정액 8,878円(대도시 11,262円) vs 도쿄 실세 14,500~16,000円 → **1박당 3,000~7,000円 자부담** 구조. 現代ビジネス 기사 제목 「「ホテル代高騰」で月5万円以上の出張宿泊費「自腹地獄」に襲われた30歳営業マン」(본문 **미확인**, 날짜 미확인) [https://gendai.media/articles/-/145542?page=3]
+- 社労士 Q&A: 「出張旅費規程で定められた宿泊費の範囲で手配することが難しく」(질문 제목, 본문 미확인) [https://contents.stilm.jp/view.php?page=q_and_a_8736]
+- 기업 대응 경향: "ホテル以外の宿泊形態（サービスアパートメント、ウィークリーマンション、ゲストハウスなど）の活用を検討し、長期出張や特定エリアでのコスト削減を図る傾向" [https://btm.pikapaka.co.jp/btm_column/formanager/business-trip-accommodation-limit/] [https://jinzainews.net/26796796/]
+- 日本経済新聞 자체 출장비 조사 수치: **미확인**(스니펫 없음).
+
+#### E-1-2. 経費精算·インボイス
+- 인보이스 제도의 出張旅費特例는 소비세상 적격청구서 불요이나 **法人税法에는 특례가 없어** 영수증(紙 또는 電子取引データ) 보존 필요; 경리부서가 "모든 영수증을 종이로" 지시해 IT화가 늦어지는 문제 지적 [https://www.superstream.canon-its.co.jp/column/nakata_invoice-travel-tax] [https://www.keihi.com/column/49146/]
+- マンスリー 법인계약 시 계정과목은 旅費交通費(출장·연수·単身赴任 회사 부담) [https://www.mrb.co.jp/magazine/detail-mb-accounting] [https://expat.metroresidences.com/jp/ja/business-trip-expense/]
+- 함의: 出張者 개인이 아닌 **총무·경리가 요구하는 것은 "適格請求書(인보이스 번호 기재)·법인 명의 청구서·월 단위 분할 영수증"**. 1か月 이상 住宅貸付은 非課税(A-4 #9)이므로 인보이스 대상 외이나, 청소비·관리비 등 과세 항목은 분리 표기가 필요(세무 확인 **미확인**).
+
+#### E-1-3. 2주 이상 출장에서 洗濯·自炊 니즈
+- "ホテルの場合、自炊スペースがないため外食やお弁当・お惣菜を調達する必要があり…食費も高くなりがち" / "マンスリーマンションは…キッチンや洗濯機など生活に必要な設備も備わっているため、自炊や洗濯が可能で、経済的" [https://stellarforce.com/blog/長期出張の宿泊選択-マンスリーマンションvsホテ/] [https://www.unionmonthly.jp/contents/20220113_1/]
+- "出張時のマンスリーマンションの利用は、1週間以上の出張である場合活用するとよい" [https://www.onelife-weekly.jp/blog/4444/]; 출장자용 세탁 고민 10선 기사 존재(피카파카) [https://btm.pikapaka.co.jp/btm_column/fortraveler/laundry_Tips/]
+- 출장자 대상 정량 설문(세탁·자취가 이유인 비율): **미확인**.
+
+#### E-1-4. 単身赴任: 借り上げ社宅 vs マンスリー
+- 借り上げ社宅 리스크: "急な異動や退職で借り上げ社宅に空き部屋が発生した際、その部屋の家賃は発生したまま", "契約期間内に解約する場合は違約金がかかることが一般的" [https://biz.mynavi.jp/contents/154] [https://www.freee.co.jp/kb/kb-benefit/company_owned_houses/]
+- マンスリー 社宅 이용의 4대 메리트(마이나비Biz): 賃料の無駄を抑えられる/出張・単身赴任先でも社宅を作れる/家具・家電付き/節税; "短期の単身赴任の期間が数年単位に及ばないのであれば、マンスリーマンションのほうが手頃" [https://biz.mynavi.jp/contents/173] [https://biz.mynavi.jp/contents/133]
+- 총무 관점: "契約手続きがシンプルで、管理の手間がかからず、忙しい総務担当者でも対応しやすい" [https://relo-syataku.com/blog/131]
+- 単身赴任者 수·マンスリー 이용률 통계: **미확인**.
+
+#### E-1-5. マンスリー 이용자 불만(청소·내견 불가·초기비용·중도해약·대응)
+- **청소**: ユニオンマンスリー(みん評 67건) — "清掃費を支払ったにもかかわらず、バスルームに人の髪が残っていてシャワーカーテンにはカビ", "入った瞬間からコバエが飛んでおり、真夏にエアコンのリモコンが壊れていてもオペレーターに電話しても出ない", "汚れについてクレームを入れても音沙汰がない"(스니펫 요약, 게시일 미확인) [https://minhyo.jp/unionmonthly] [https://minhyo.jp/unionmonthly?page=2]
+- "「室内の汚れが気になった」「シャワーカーテンが汚くて驚いた」などの意見がSNSなどで見受けられ、清掃品質が会社によってバラつき" [https://x-house.co.jp/column/sharehouse/xross-1953/]; "「部屋がカビだらけだった」「異臭がする」など、衛生面のトラブルが多く報告" [https://biz.mynavi.jp/contents/118]
+- **내견 불가·사진 갭**: "多くのマンスリーマンションでは契約前に内見ができないケースが一般的で…「写真と全然違う」「狭い・古い・汚い」" [https://biz.mynavi.jp/contents/118] [https://www.onelife-weekly.jp/blog/4116/]
+- **초기비용·중도해약**: "初期費用を入居前に一括払いする場合、契約途中に解約する際に残りの費用が返金されない場合" [https://atinn.jp/information/monthly-apartment-demerit/]; 청소비·관리비·보증료 청구 여부가 회사별로 상이 [https://atinn.jp/information/room-rent-price/]; "見積もり時の総額が賃料単価から大きく膨らむ点"(ユニオン 평판 검증 기사) [https://map.partizaning.org/Dorama-Ninki/3759744/]
+- **환불 지연**: レオパレス "退去後の返金が数ヶ月経っても処理されていないケース"(e-mansion 게시판 스니펫, 날짜 미확인) [https://www.e-mansion.co.jp/bbs/thread/41743/]
+- **설비 불일치·주민 트러블**: "契約に明記されている設備や家具・家電、備品が正しく揃っていない", 소음·쓰레기 배출 매너 [https://biz.mynavi.jp/contents/118]
+- X/Twitter·価格.com 원문 인용: **미확인**(검색 결과에 노출 안 됨).
+
+### E-2. 구미·호주·대만 'Japan fan' 1~3개월 체류자의 니즈·불만
+
+#### E-2-1. 규모 신호
+- **디지털 노마드 비자(2024.4 신설, 6개월, 연수입 1,000만 엔 이상, 연장 불가)**: 발급 2024년 **257건** → 2025년 **646건**(동반 배우자 포함) [https://www.japantimes.co.jp/community/2026/07/20/our-lives/digital-nomads-japan-life/] [https://www.nomag.world/p/japan-wants-digital-nomads-just-not] [https://guide.genki.world/digital-nomad-visa-japan/]
+- Japan Times(2026.7.20) 「The 180-day locals」: "Japan's small but growing ranks of digital nomads have embraced the opportunity to embed themselves in a Japanese life — and take advantage of a weak yen" [https://www.japantimes.co.jp/community/2026/07/20/our-lives/digital-nomads-japan-life/]
+- 비자 없이 90일 관광 체류로 1~3개월 사는 구미·호주·대만인 수: **미확인**(방일 통계에 체류기간별 국적 분해 없음).
+
+#### E-2-2. 원하는 것(wants)
+- 노마드 가이드(2026.3 기준 시세): 월 단위 예약 도쿄 ¥120K–180K / 오사카 ¥80K–110K / 후쿠오카 ¥60K–80K; "Airbnb works best as a bridge for the first 2–4 weeks while you scout share houses or serviced apartments in person, as using it for an entire 6-month stay gets expensive and logistically messy" [https://localnomad.club/en/blog/guides/japan-housing-digital-nomads-2026]
+- 선택지 정리: "serviced apartments (¥80K–180K/month), share houses (¥30K–100K), or Airbnb (watch the 180-day cap)" [https://localnomad.club/en/blog/guides/japan-housing-digital-nomads-2026]; ウィークリー/マンスリー는 "furnished units, flexible contract lengths, and minimal paperwork… a natural fit for the Digital Nomad visa's constraints" [https://arealty.jp/blog/digital-nomad-visa-japan-housing/]
+- 대만 Dcard(日本生活, 2026.3) 「東京月租公寓租屋心得分享（非leopalace21）」: LiveMax weekly-monthly로 "1K 電梯大樓、鋼筋水泥、衛浴分離、自動鎖、全套傢俱…地鐵站步行5分內、初期費用0、含水電瓦斯 約13萬日幣/月"; 절차는 "網站聯絡→英語 越南籍 staff 이메일→海外電話로 계약 확인→**電子契約·카드 정보 송부**"; **내견 불가** [https://www.dcard.tw/f/japan_life/p/254845166]
+- 대만 PTT Japan_Travel 「[問題] 背包客到日本住一個月」 스레드 존재(본문 미확인) [https://pttweb.tw/s/3QdVF]; 樂吃購 "去東京玩一個月要住哪？東京「公寓式住宿」推薦9間"(廚房·洗衣機 강조) [https://tokyo.letsgojp.com/archives/527357/]
+- Dcard 워홀 「日本打工度假 找到房子之前住哪裡..？」: 셰어하우스·월세방으로 시작 권고(본문 미확인) [https://www.dcard.tw/f/japan_life/p/255973974]; 대만 가이드: "很多房子不租給外國人，部分物件會要求保證人，且初期成本驚人", 在留卡·日本銀行帳戶·日本手機號碼 필요 [https://jobmenta.yourator.co/blogs/310] [https://vocus.cc/article/65d0eeb7fd897800013267d8]
+- → 공통 wants: **주방·세탁기·역 도보 5분·초기비용 0·영어(또는 중국어) 이메일 계약·전자계약·카드 결제·내견 대체(사진·리뷰)**. Reddit r/JapanTravel·r/movingtojapan·r/digitalnomad 원문 인용: **미확인**(검색 결과에 스레드가 노출되지 않음).
+
+#### E-2-3. 불만(Airbnb 월 단위·マンスリー 사이트)
+- **180일 규제**: "Japan's minpaku law caps each registered property at 180 operating days per year" [https://localnomad.club/en/blog/guides/japan-housing-digital-nomads-2026]; 교외 자치체의 民泊 제한 확대 기사(Tokyo Cheapo) [https://tokyocheapo.com/accommodationcat/suburbs-vacation-rental-ban/]
+- **호스트 취소**: "Hosts can cancel up to 7 days before check-in. Community reports suggest cancellation rates spike during Golden Week and cherry blossom season, when hosts can charge higher nightly rates to tourists" [https://localnomad.club/en/blog/guides/japan-housing-digital-nomads-2026]; 2018.6 무허가 리스팅 일괄 취소 사태·1,000만 달러 보상펀드 전례 [https://techcrunch.com/2018/06/08/airbnb-creates-10m-fund-to-cover-cancelled-reservations-in-japan-after-regulatory-shift]
+- **월 할인 현실**: "Monthly discount listings (20–30% off nightly rates) give the best value, but they're harder to find during peak months" [https://localnomad.club/en/blog/guides/japan-housing-digital-nomads-2026]; Airbnb 28박+ 장기 취소정책은 호스트가 firm/strict 선택 [https://airbnb.com/help/article/3735]
+- **PTT** 「大家會對民泊法後的AirBnB有信心嗎」(Japan_Travel, 2022.9) — 民泊法 이후 신뢰 논의, "要仔細挑選民泊房源才能避免雷點"(스니펫) [https://www.ptt.cc/bbs/Japan_Travel/M.1663325880.A.A6D.html]
+- **LiveMax 평판**(대만 Threads): "便宜,但是評價都很差…Google 評價 2.5", 브랜드 교체 후 평점 하락 지적(게시일 미확인) [https://www.threads.com/@wahaha888/post/DVtISxODz9L/]
+- **일본어 전용 사이트·내견 불가**: Dcard 후기에서 LiveMax는 내견 불가·이메일 영어 대응(E-2-2). 일본어 전용 マンスリー 포털에 대한 영어권 불만 인용: **미확인**.
+- 위약금·해약 비용 인식 갭: 외국인 세입자 평균 해약 비용 ¥320,000–480,000, 42%가 50% 이상 과소평가(A-Realty, TASK C-5 재인용) [https://arealty.jp/blog/early-contract-termination-penalty-fee-japan/]
+
+### E-3. 보안·신뢰 기대와 일본 중기임대 사기·범죄 패턴
+
+#### E-3-1. 본인확인 규제와 기대
+- 民泊新法·旅館業法: 체크인 시 본인확인 + 宿泊者名簿 보존 의무, 외국인은 국적·여권번호 기재 및 여권 사본 보관 [https://www.hotelsmart.jp/id-checkin/737/] [https://manekey.com/blog/column20241226/]
+- **2025.4.1 旅館業法 시행규칙 개정**: 簡易宿所 프런트 미설치 시 ①본인확인 장치(영상·안면인식) ②긴급연락 ③스마트록 열쇠 인도 ④출입 감시 설비 4종 필수 [https://www.hotelsmart.jp/how-to-checkin/4693/]
+- 賃貸借(30일+) 쪽은 宿泊者名簿 의무가 없으나, 아래 犯罪利用 사례로 **플랫폼 자체 eKYC(在留カード·여권 + 얼굴 대조)가 사실상 필수 기대치**. 33m2 한국의 "여권 사진 인증"(A-1)만으로는 일본 임대인·관리조합 설득 부족 가능성(정성 판단).
+
+#### E-3-2. 스마트록 사고
+- "神奈川県内の民泊で、チェックアウト直前にスマートロックの電池が切れてしまい、ゲストが部屋に閉じ込められ、管理会社が救出に駆けつけた事例"; "電波状況が悪い、システム不具合、運営者の登録ミスなどにより、ゲストが部屋に入れないトラブルが繰り返し起きている" [https://note.com/tokumei_hudosan/n/nfbc70a95246c] [https://reiwa-create.com/news-blog/minpaku-knowhow/minpaku-smartlock-autolock-guest-lockout-guide/]
+- 업계 가이드: 電池残量 通知 시스템·비상 해정 방법 사전 안내 필수 [https://remotelock.kke.co.jp/article/smartlock-trouble-risk/] [https://tabilmo.com/tips/minpaku-smartlock/]
+- 해킹 사례(일본 내): **미확인**.
+
+#### E-3-3. 犯罪利用(2024–2025)
+- **특수사기 かけ子 거점**: 日経(2025.5) 「民泊拠点に「かけ子」、詐欺容疑で3人逮捕 7都府県を転々か」(警視庁) [https://www.nikkei.com/article/DGXZQOUD235T90T20C25A5000000/]
+- **무허가 民泊 삭제 요청**: 観光庁이 2024年度 중개사이트에 약 **250건** 삭제 지도, 2025年度도 약 40건(2025.6 시점), 주민 퇴거 사례 언급 [https://www.jiji.com/jc/article?k=2025062401073&g=soc]
+- **闇バイト**: 2025년 警察庁 仮装身分捜査 13건·5명 체포(강도예비·사기미수) [https://www.nikkei.com/article/DGXZQOUD27AGW0X20C26A1000000/]; 闇バイト 실행범이 民泊·マンスリー를 拠点으로 쓴 구체 사례: **미확인**(스니펫 없음)
+- **盗撮**: 2017.6 후쿠오카 民泊 화재경보기 내 카메라로 한국인 커플 촬영 사건 [https://imirai.co.jp/airbnbなど民泊で性的暴行、盗撮！自分で身を守る7つ/]; "日本でも、ホスト側がゲストを盗撮したり…性的暴行" 일반 언급 [https://maylight.co.jp/mansion-baikyaku/airbnb-trouble.html]; 2024–2025 일본 내 체포 사례: **미확인**
+- 警察庁 民泊 관련 범죄 통계: **미확인**.
+
+#### E-3-4. 사기 패턴(외국인 대상)
+- Facebook 가짜 "외국인 집주인" 매물 + 선입금(PayPal ¥120,000) 사례(TASK C-8 재인용) [https://3d-universal.com/en/blogs/housing-scams-to-watch-out-for-in-tokyo.html]; "No legitimate Japanese landlord asks for deposits before a formal contract", 사진 도용 재게시 [https://japanlivinglife.com/articles/japan-real-estate-scams-avoid-guide] [https://realestateguide.jp/tokyo-rental-scams-how-to-spot-and-avoid-them/]
+- 미국 FTC(2025.12): 렌탈 사기 신고 손실 **$65M**, 2025.6까지 12개월간 신고자 약 절반이 "Facebook 가짜 광고로 시작" [https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2025/12/rental-scams-hit-home-65-million-reported-losses] — 구미 이용자의 사전 경계 수준을 보여주는 대리지표
+- 国民生活センター(2025.4.22) 「新生活スタート後に気を付けたい消費者トラブル」: SNS 발 송금 유도·"いったん支払ってしまうと、被害回復は困難" [https://www.kokusen.go.jp/news/data/n-20250422_1.html]; 賃貸 原状回復 트러블 상담 페이지 [https://www.kokusen.go.jp/soudan_topics/data/chintai.html]. **マンスリー/前払い 특정 상담 건수: 미확인**
+- Sakura House 사칭 구체 사례: **미확인**(재확인, 스니펫 없음). 家賃前払い詐欺 일본어 보도: **미확인**.
+- 기대치 정리: **①플랫폼 에스크로(보증금·월세를 플랫폼이 보관, 33m2 방식) ②사진·주소 실재 검증(도용 방지) ③호스트 신원·物件 소유/転貸 승낙 검증 ④게스트 eKYC ⑤스마트록 비상 해정 SLA** — 위 사례가 각각 대응 근거.
+
+### E-4. 자동화·풀온라인·보안 우선 모델에 대한 시사점
+
+1. **일본인 出張者(2주~3개월)**: 상한 8,878~11,262円 vs 실세 14,500円+의 갭이 크고 마이나비Biz 등이 이미 マンスリー를 "총무 부담 최소" 대안으로 밀고 있어 자동화 모델과 정합. 단 **法人 청구서·인보이스·월 분할 영수증 자동 발행**이 없으면 총무가 채택하지 않음 → 인보이스 등록번호 기재 청구서 자동 생성이 필수 온라인 기능(청소비 등 과세분 분리 표기 검토).
+2. **単身赴任(3~12개월)**: 借り上げ社宅의 공실·위약금 리스크가 페인 → 30일 단위 定期借家 + 법인 온라인 계약이 맞음. 법인 신용심사·請求書払い(후불)는 오프라인 여신 판단이 남는 영역.
+3. **구미·호주·대만 1~3개월 체류자**: 요구(주방·세탁·역근접·초기비용 0·영어/중국어 전자계약·카드 결제·내견 대체)는 33m2 UX와 거의 일치. Airbnb의 180일·호스트 취소·성수기 월할인 소멸이 이탈 동기 → "호스트 취소 시 플랫폼 보상·대체 물건 보장"이 차별점. 규모는 디지털 노마드 비자 646건(2025)처럼 작고 관광 90일 체류자 통계가 없어 **한국인 웨지(TASK D) 이후의 2차 세그먼트**로 두는 것이 안전.
+4. **자동화로 해결되는 것**: 예약·전자계약(定期借家 書面 사전설명의 전자화 가능 여부는 법률 확인 필요)·카드 선결제·에스크로 보증금·eKYC(在留カード/여권+얼굴)·스마트록 코드 발급·자동 메시지·인보이스 발행·리뷰.
+5. **오프라인 운영이 남는 것**: ①퇴실 청소·리넨(청소 불만이 マンスリー 최다 불만이자 賃貸/宿泊 경계 판단 요소 → 게스트 자가 청소 원칙 + 퇴실 시 유료 청소 옵션의 외주 네트워크) ②스마트록 전지·통신 장애 시 현장 출동(24h 대응 실패가 みん評 불만) ③설비 고장·비품 불일치 대응 ④법인 후불 여신·회수 ⑤犯罪利用 의심 시 통보·퇴거.
+6. **보안 설계는 두 방향**: 게스트 측 eKYC + 이용 목적 기재(犯罪利用 억제)와 호스트 측 소유/転貸 승낙·주소 실재 검증(가짜 매물 억제). 카메라·도촬 우려에는 "실내 카메라 0 선언 + 위반 시 퇴출" 정책과 게스트 점검 가이드가 최소 요건.
+7. **가격 포지션**: 出張者에게는 "정액 상한 이내(일할 8,000~10,000円)"가 판매 문구, 노마드에게는 "월 ¥120K–180K(도쿄) 이하 + 취소 보호"가 문구. 두 세그먼트 모두 **주소 등록 불필요**라 A-4 #8의 住民票 이슈가 없고, 30일 단위·非課税 설계(A-4 #9)와 충돌하지 않음.
+
+---
+
 ## 시사점(한 줄)
 33m2의 핵심(정액 소액 보증금·앱 계약·주 단위 가격·호스트 보상)은 일본에서 **"30일 이상 定期借家 + 宅建業 媒介 리스크 해소(면허 또는 借上げ/광고형) + 民泊 180일 초과분·マンスリー 사업자 재고를 1차 공급으로 + GTN형 보증 내장 + 住民票 이전 가능 태그"**로 재설계해야 살아남고, 첫 수요는 매년 수만 명이 순환하는 한국인 워홀·유학·주재·한달살기 층을 한인 부동산·커뮤니티 채널로 묶는 것이 가장 빠르다.
 
-**미확인/추가 조사 필요**: 삼삼케어 보상 한도 금액; 33m2 오피스텔·지역 비중 및 단기 프리미엄(+60~100%) 공식 수치; 宅建業法 解釈・運用の考え方 상 온라인 플랫폼 媒介 해당성(법률 의견 필요); 일본 가구付き 賃貸 비중 통계; レオパレス マンスリー 실수(5.6만실 설) ; Airbnb 일본 30일+ 예약 비중; ADDress 회원수; GTN 승인률·Sakura House 누적 이용자; Borderless House 거점 수; 東京都·국교성 2022/2023 외국인 입거차별 조사 수치; Reddit·Facebook 원문 인용 전부; Sakura House 사칭 사기 구체 사례; マンスリー vs 賃貸 프리미엄의 지역·면적 통제 비교; 한국인 워홀 연간 실제 발급 수(외교부 통계); 韓国人 訪日客 중 1개월+ 체류 비중; K-pop 연습생·興行 비자 한국인 수; 일본 내 한국 진출기업 법인 수·주재원 수; 엔코(Enkostay) 일본 진출 여부; 동유모 외 네이버 카페('일본 워홀', '도쿄 한인') 회원 수; "한국인이라서" 차별 사례 유무.
+**미확인/추가 조사 필요**: 삼삼케어 보상 한도 금액; 33m2 오피스텔·지역 비중 및 단기 프리미엄(+60~100%) 공식 수치; 宅建業法 解釈・運用の考え方 상 온라인 플랫폼 媒介 해당성(법률 의견 필요); 일본 가구付き 賃貸 비중 통계; レオパレス マンスリー 실수(5.6만실 설) ; Airbnb 일본 30일+ 예약 비중; ADDress 회원수; GTN 승인률·Sakura House 누적 이용자; Borderless House 거점 수; 東京都·국교성 2022/2023 외국인 입거차별 조사 수치; Reddit·Facebook 원문 인용 전부; Sakura House 사칭 사기 구체 사례; マンスリー vs 賃貸 프리미엄의 지역·면적 통제 비교; 한국인 워홀 연간 실제 발급 수(외교부 통계); 韓国人 訪日客 중 1개월+ 체류 비중; K-pop 연습생·興行 비자 한국인 수; 일본 내 한국 진출기업 법인 수·주재원 수; 엔코(Enkostay) 일본 진출 여부; 동유모 외 네이버 카페('일본 워홀', '도쿄 한인') 회원 수; "한국인이라서" 차별 사례 유무. **[TASK E 추가]** 日本経済新聞 출장비 상한 조사 수치; 出張者 대상 洗濯·自炊 이유 정량 설문; 単身赴任者 수·マンスリー 이용률; X/Twitter·価格.com マンスリー 원문 불만; マンスリー 청소비·관리비 과세분의 인보이스 표기 세무 확인; 관광 90일 체류 구미·호주·대만인 중 1개월+ 비중; Reddit(r/JapanTravel·r/movingtojapan·r/digitalnomad) 원문 인용; 일본어 전용 マンスリー 포털에 대한 영어권 불만 원문; Dcard·PTT 스레드 본문(제목만 확인분); Airbnb 일본 호스트 취소율 정량; 일본 내 스마트록 해킹 사례; 闇バイト 실행범의 民泊·マンスリー 거점 사용 구체 사례; 2024–2025 일본 民泊 盗撮 체포 사례; 警察庁 民泊 범죄 통계; 国民生活センター マンスリー/前払い 상담 건수; 家賃前払い詐欺 일본어 보도; 定期借家 사전설명의 완전 전자화 가능 여부(법률 확인).
